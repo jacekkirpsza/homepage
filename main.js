@@ -1,4 +1,4 @@
-alert('Siema :D');
+
 console.log('CZeść to ja Jacek');
 const name='Kamil';
 const age='23';
