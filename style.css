@@ -4,8 +4,9 @@ h2{color: #796011;background-color: #c4cc4e;}
 body{background:#ECFEE8;}
 footer{background-color: #FCF6B1;}
 #logowtf {background: black;}
-#mojezdjecie {width: 200px; height: 300px;
-}
+#mojezdjecie {width: 220px; height: 300px; margin:16px 64px; display: block; 
+    border:6px solid #721216; border-radius: 50%;
+padding: 6px;}
 
 #zasadaWaznosci {max-height: 3cm;}
 .logo-header{color: #331832;}
