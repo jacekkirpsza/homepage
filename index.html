@@ -253,8 +253,18 @@
                         <b>{border-radius: 16px lub 50%;}</b> Pozwala nam zaokrąglic krawedzie naszej ramki. 16px sa to male zaokraglenia, 50%da nam koło. <br>
                         <b>{margin: 16px auto;}</b> Super opcja na wycentrowanie czegos, ustawia nam marfinesy automatycznie w rownej odleglowsci od krawedzi ekranu, prawo lewo. <br>
                         Jedyne o czym musimy pamietać to zadać width dla naszego elemementu bo inaczej to nie zadziała. <br>
+                        <b>{box-sizing: border-box;}</b> Ta własność ustawia nam wymiar boxa w zaleznosci od obramowania. Co znaczy ze nadane wymiary dla elementu width i hight bede tyczyc sie borderu. <br>
+                        Dzieki temu po zadaniu interesujacego nas paddingu nie musimy liczyc jak wielki ma byc element w srodku. <br>
+                        <b>{position: static, relative, absolute, fixed, sticky;}</b> Są to własności służce do pozycjonowania elementu. Static jest własnościa domyślna. <br>
+                        Relative jest własnościo specjalna ktora daje mozliwosci. Generalnie element bedzie sie ustawiac jak w static ale jesli ja zdefiniujemy pozycja ta staje sie rodzicem. <br>
+                        Absolute równiez bedzie zachowywac sie jak static samdzielnie ale jesli gdzies w drzewku wyzej jest zdefiniowana pozycja relativ bedzie sie odnosil tylko do danego elementu. <br>
+                        Fixed Element jest zamocowany na stałe do ekranu i przewija sie razem z ekranem (pływa) gdy scrolujemy ale ciagle w wyznaczonej pozycji. <br>
+                        Sticky Działa podobnie jak absolut i fixed razem. bardzo fajna pozycja wozi sie z nami tak jak fixed ale tylko w obrebie elementu rodzica plus tekst go oplywa. <br>
+                        <b>{top, right, bottom, left: 16px, 50%;}</b> Sa to właściwości do recznego pozycjonwania elementu, jak w układzie wspołrzędnych. <br>
+                        <b>{z-index: 100;}</b> Nadaje wirtualną pozycji w naszym kodzie. np. jak 2 elementy nakładaja sie na siebie i chcemy ustalic ktory bedzie widoczny. <br>
+                        <b>{float: left, right, top, bottom;}</b> Słuzy do tego aby dany element był oplywany przez tekst lub inne elementy. Nie uzywamy go do budowy leyotow strony! <br>
+                        <b>{clear: left, right;}</b> Czysci nam floaty jesli wystaja nam poza element czyli działa jak hidden w overflow z ty ze scina z lekkim odstepem jakby na padding. <br>
                         
-
 
                     </p>
                 </section>
