@@ -11,6 +11,8 @@ h2 {
 }
 body {
   background: #ecfee8;
+  width: 100%;
+  margin: 16px auto;
 }
 footer {
   background-color: #fcf6b1;
@@ -34,6 +36,8 @@ footer {
 }
 .logo-header {
   color: #331832;
+  width: 500px;
+  margin: 16px auto;
 }
 .week-header {
   color: #41337a;
@@ -49,4 +53,12 @@ footer {
 }
 .body-header {
   background: #fcf6b1;
+}
+main {
+  width: 1000px;
+  margin: 16px auto;
+}
+nav {
+  width: 650px;
+  margin: 16px auto;
 }
