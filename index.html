@@ -1,307 +1,447 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header class="body-header">
-        <h4 class="logo-header">20.04.2020r. Początek szkolenia z <a class="logo-header"
-                href="https://cotenfrontend.pl"> <img id="logowtf" src="wtf-mini.svg" alt="logo wtf-mini"> co ten
-                frontend</a></h4>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="o-mnie.html">O mnie</a>
-            <a href="html-wiecej.html"> HTML</a>
-            <a href="css-wiecej.html"> CSS</a>
-            <a href="js-wiecej.html"> JS</a>
-            <a href="https://validator.w3.org/nu/">Validator</a>
-            <a href="roadmap.html">Mapa Frontendu</a>
-            <a href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a>
-            <a href="https://coolors.co/">Coolors</a>
-            <a href="https://github.com/jacekkirpsza">GitHub</a>
-        </nav>
-
+      <h4 class="logo-header">
+        20.04.2020r. Początek szkolenia z
+        <a class="logo-header" href="https://cotenfrontend.pl">
+          <img id="logowtf" src="wtf-mini.svg" alt="logo wtf-mini" /> co ten
+          frontend</a
+        >
+      </h4>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="o-mnie.html">O mnie</a>
+        <a href="html-wiecej.html"> HTML</a>
+        <a href="css-wiecej.html"> CSS</a>
+        <a href="js-wiecej.html"> JS</a>
+        <a href="https://validator.w3.org/nu/">Validator</a>
+        <a href="roadmap.html">Mapa Frontendu</a>
+        <a href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a>
+        <a href="https://coolors.co/">Coolors</a>
+        <a href="https://github.com/jacekkirpsza">GitHub</a>
+      </nav>
     </header>
     <main>
+      <section id="top">
+        <h1 class="main-header">Notatki z WTF</h1>
+        <article>
+          <h2 class="week-header">Tydzień 1</h2>
+          <section>
+            <h3 class="article-header">Wprowadzenie</h3>
+            <p>
+              Wyjaśnienie czym jest Frontent, Pokazanie
+              <a href="roadmap.html">mapy</a> frontendowca<br />
+              Pokazanie i instalacja potrzebnych narzędzi jak grupa wsparci na
+              Slack oraz Visual code studio
+            </p>
+          </section>
+        </article>
+        <article>
+          <h2 class="week-header">Tydzień 2</h2>
+          <section>
+            <h3 class="article-header">Warstwy strony Internetowej</h3>
+            <p>
+              <strong>
+                A więc Treść --> HTML który porzadkuje tą treść --> CSS warstwa
+                styli, <br />
+                która upiększa nam wyświetlany takst --> Java Script która
+                wproszadzi interakcje i umożliwi zabawę tą treścią</strong
+              >
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Podstawowy HTML i CSS</h3>
+            <p>
+              Nauka podstawowych znacznikow: <br />
+              <b>
+                &lt;main> , &lt;header> , &lt;footer>, &lt;section>,
+                &lt;article> </b
+              >, nagłówki <b> &lt; h1-h6> </b>oraz paragraf
+              <b>
+                &lt; p>
+              </b>
+            </p>
+            <p>
+              Wszystko co nam sie wyświetla na stronie znajduje się w sekcji
+              body. <br />
+              Wszystkie spacje i entery sa w html-u ignorowane. <br />
+              <i
+                >ctr shift p -> format document --> wszystko nam sie ładnie
+                porzadkuje</i
+              >. <br />
+              Ciekawe narzedzie do sprawdzania kodu to validator, szybko nam
+              powie czy nasz zapis jest ok.
+              <br />
+              Kazda sekcja powinna miec nagłówek, istotna sprawa bo wywala nawet
+              ostrzezenie w <b> validatorze</b>.
+            </p>
+            <p>
+              <strong
+                >Style CSS opisujemy za pomoca regół ktora sklada sie z -->
+                selektora {właściwości: watości;} --> pod selektor wstawiamy np
+                nazwe znacznika ktory chcemy ostylowac, <br />
+                a dalej juz jakas wlasność np kolor i wartosć.</strong
+              >
+            </p>
+            <p>
+              Stylowac moze bezposrednio w pliku index w sekcji head , dodajac
+              znacznik style, lub tez w oddzielnym
+              <br />
+              pliku styli podajac w sekcji head link do naszego pliku ze
+              stylami. <br />
+              Aby podac link do pliku css urzywamy znacznika
+              <b>
+                &lt; link> w sekcji head.&lt; Link href="nazwa pliku"
+                rel="stylesheet" type="text/css">
+              </b>
+              <br />
+              Narazie stylujemy po całych elementach a ale z czasem dowiemy sie
+              czegoś nowego :D
+            </p>
+          </section>
+        </article>
+        <article>
+          <h2 class="week-header">Tydzień 3</h2>
+          <section>
+            <h3 class="article-header">HTML ciąg dalszy</h3>
+            <p>
+              Poznajemy nowe znaczniki: <br />
+              <b> &lt; br> </b>- do przeniesienia lini.(Nie zamykamy tego
+              znacznika, domyka sie sam, nie ma pary) <br />
+              <b>
+                &lt; b>
+              </b>
+              do pogrubienia w celu wyróznienia jakiegoś tekstu ,<b>
+                &lt; strong>
+              </b>
+              do pogrubienia ale istotnego teksu jest to znacznik semantyczny
+              <br />
+              <b>
+                &lt; i>
+              </b>
+              do kursywy w celu wyróżnienia słowa, tekstu,
+              <b> &lt; em> </b>do kursywy w celu pogreślenia ironi , jest to
+              znacznik semantyczny <br />
+              <b>
+                &lt; a href="name"> opis łącza &lt; /a>
+              </b>
+              - Linki , lącza na zewnatrz oraz wewnątrz dokumentu, np, przejscie
+              na góre strony , na dół, Lub też w inną zkładke. <br />
+              <b>
+                &lt; nav>
+              </b>
+              - Służy do nawigacji po stronie, takie zakładki, wyżucamy ten
+              znacznik poza main tak aby nawigacja pojawiala nam sie na kazdej
+              podstronie. <br />
+              <b>
+                &lt; img src="name" alt="name2">
+              </b>
+              Za pomocą tego znacznika wstawimy zdjęcie (Jest to znaczni
+              samodmykajacy sie). Podajemy żródło obrazka oraz niewidoczna w
+              przegladarce nazwe.
+            </p>
 
-        <section id="top">
-            <h1 class="main-header"> Notatki z WTF </h1>
-            <article>
-                <h2 class="week-header">Tydzień 1</h2>
-                <section>
-                    <h3 class="article-header">Wprowadzenie</h3>
-                    <p>Wyjaśnienie czym jest Frontent, Pokazanie <a href="roadmap.html">mapy</a> frontendowca<br>
-                        Pokazanie i instalacja potrzebnych narzędzi jak grupa wsparci na Slack oraz Visual code studio
-                    </p>
-                </section>
-            </article>
-            <article>
-                <h2 class="week-header">Tydzień 2</h2>
-                <section>
-                    <h3 class="article-header">Warstwy strony Internetowej</h3>
-                    <p><strong> A więc Treść --> HTML który porzadkuje tą treść --> CSS warstwa styli, <br>
-                            która upiększa nam wyświetlany takst --> Java Script która wproszadzi interakcje i umożliwi
-                            zabawę
-                            tą treścią</strong></p>
-                </section>
-                <section>
-                    <h3 class="article-header">Podstawowy HTML i CSS</h3>
-                    <p>Nauka podstawowych znacznikow: <br>
-                        <b>
-                            &lt;main> , &lt;header> , &lt;footer>, &lt;section>, &lt;article>
-                        </b>, nagłówki <b>
-                            &lt; h1-h6>
-                        </b>oraz paragraf <b>
-                            &lt; p>
-                        </b>
-                    </p>
-                    <p>Wszystko co nam sie wyświetla na stronie znajduje się w sekcji body. <br>
-                        Wszystkie spacje i entery sa w html-u ignorowane. <br>
-                        <i>ctr shift p -> format document --> wszystko nam sie ładnie porzadkuje</i>. <br>
-                        Ciekawe narzedzie do sprawdzania kodu to validator, szybko nam powie czy nasz zapis jest ok.
-                        <br>
-                        Kazda sekcja powinna miec nagłówek, istotna sprawa bo wywala nawet ostrzezenie w <b>
-                            validatorze</b>.</p>
-                    <p><strong>Style CSS opisujemy za pomoca regół ktora sklada sie z --> selektora {właściwości:
-                            watości;}
-                            --> pod
-                            selektor wstawiamy np nazwe znacznika ktory chcemy ostylowac, <br>
-                            a dalej juz jakas wlasność np kolor i wartosć.</strong></p>
-                    <p>Stylowac moze bezposrednio w pliku index w sekcji head , dodajac znacznik style, lub tez w
-                        oddzielnym
-                        <br>
-                        pliku styli podajac w sekcji head link do naszego pliku ze stylami. <br>
-                        Aby podac link do pliku css urzywamy znacznika <b>
-                            &lt; link> w sekcji head.&lt; Link href="nazwa pliku" rel="stylesheet" type="text/css">
-                        </b> <br>
-                        Narazie stylujemy po całych elementach a ale z czasem dowiemy sie czegoś nowego :D
-                    </p>
-                </section>
-            </article>
-            <article>
-                <h2 class="week-header">Tydzień 3</h2>
-                <section>
-                    <h3 class="article-header">HTML ciąg dalszy</h3>
-                    <p>Poznajemy nowe znaczniki: <br>
-                        <b>
-                            &lt; br>
-                        </b>- do przeniesienia lini.(Nie zamykamy tego znacznika, domyka sie sam, nie ma pary) <br>
-                        <b>
-                            &lt; b>
-                        </b> do pogrubienia w celu wyróznienia jakiegoś tekstu ,<b>
-                            &lt; strong>
-                        </b> do pogrubienia ale istotnego
-                        teksu jest to znacznik semantyczny <br>
-                        <b>
-                            &lt; i>
-                        </b> do kursywy w celu wyróżnienia słowa, tekstu, <b>
-                            &lt; em>
-                        </b>do kursywy w celu pogreślenia
-                        ironi , jest to znacznik semantyczny <br>
-                        <b>
-                            &lt; a href="name"> opis łącza &lt; /a>
-                        </b> - Linki , lącza na zewnatrz oraz wewnątrz dokumentu, np, przejscie na góre strony , na dół,
-                        Lub
-                        też w inną zkładke. <br>
-                        <b>
-                            &lt; nav>
-                        </b> - Służy do nawigacji po stronie, takie zakładki, wyżucamy ten znacznik poza main tak aby
-                        nawigacja pojawiala nam sie na kazdej podstronie. <br>
-                        <b>
-                            &lt; img src="name" alt="name2">
-                        </b> Za pomocą tego znacznika wstawimy zdjęcie (Jest to znaczni samodmykajacy sie). Podajemy
-                        żródło
-                        obrazka oraz niewidoczna w przegladarce nazwe.
-                    </p>
-
-                    <p><Strong>Poznajmy tez atrbuty</Strong> <br>
-                        <b>Atrybut id, &lt; element id="name"> </b> - Identyfikuje element (przydaje se w nawigacji
-                        wewnatrze
-                        dokumentu). <br>
-                        Żeby przejść do danego miejsca o tym id używamy znacznika <b>
-                            &lt; a href="#name">Przejdz do name &lt; /a>
-                        </b> Bardzo ważne żeby użyć <b># przed nazwą</b> inaczej nie zadziałą. <br>
-                        <b>Atrybut alt</b> - Tekst Alternatywny dla przeglarki. Wykorzystywany przy wstawianiu zdjęcia.
-                        <br>
-                        <b>Atrybut Style, &lt; element style="własność:wartość;"></b> Jest to tak zwane stylowanie
-                        inline
-                        ,
-                        bezposrednio w znaczniku. Ale raczej tego nie używamy bo tworzy nam bałagan. <br>
-                        <b>Atrybut class, &lt; element class="name"></b> Atrybut ten ma funkcje jak atrybut id, znakuje
-                        nam
-                        element. Roznica jest taka ze w przypadku class używamy <b>.przed nazwa</b> <br>
-                        do identyfikacji nazwy np <b>.name</b> . To samo ma sie w przypadku stylowania również używamy
-                        .name aby ostylowac element o tej clasie. <br>
-
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">Kanban i Terminal</h3>
-                    <p><b>Kanban</b> - to planowanie pracy za pomacą tablicy składającej się z kolumn ( Przeważnie 3: Do
-                        zrobienia, W Trakcie, Zrobione), Umieszczamy tam nasze zadania i kolejno przesuwamy. <br>
-                        Dzięki temu śledzimy postępy naszej pracy. Taką talice możemy stworzyć offline jak i w online w
-                        przeglądarce na stronie <a href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a>.
-                        <br>
-                        <b>Terminal</b> - narzędzie do przesuwania się między folderami za pomocą wiersza poleceń. <br>
-                        Podstawowoe komendy w Terminalu: <strong> cmd , cd "nazwa" , cd.. , cd..\.. , dir , mkdir
-                            "nazwa" ,
-                            code . ,</strong> <br>
-                        oznaczają one kolejno: włączenie teraminala z menu start, przejscie do katalogu o danej nazwie,
-                        przejscie do katalogu wyżej, lub też 2 wyżej, dir - pokazuje zawartość katalogu, <br>
-                        tworzenie nowego folderu o danej nazwie, Odpalaenie Visual Code Studio w aktualnym folderze.
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">CSS ciąg dalszy</h3>
-                    <p> <b>Stylowanie przez id</b> - Pamiętamy żeby uzyć <b># przed nazwa</b> podczas stylowania <br>
-                        <b>Stylowanie przez class</b> - Pamietamy żeby użyć <b>. przed nazwa </b> podczas stylowana <br>
-                        <b>Stylowanie inline</b> - Stylowanie bezpośrednio w znaczniku, żadko używane. <br>
-                        Własność <b>!important</b> wpisana w selektorze np { color: red !important; } jest najwazniejsza
-                        reguła która zabija wszystkie inne. Ale staramy sie jej nie używać. <br>
-                        <b>Zagnieżdzanie elementów</b> - Stylowanie przez elementy przez zagnieżdzanie. W tym wypadku
-                        podajemy 2 elementy , ten który chcemy ostylowac i ten z drzewka wyżej. <br>
-                        Jest to ważniejsze niż podanie tylko 1 elementu i ostyluje nam tylko elemetny z tego drzewka
-                        ktore wpisalismy jako pierwsze. <br>
-                        <i>Specyficzność CSS</i> Czyli co jest wązniejsze: <br>
-                        <img id="zasadaWaznosci" src="specyficznosc-css.PNG" alt="zasada-waznosci-css"> <br>
-                        <b>Jesli specyficznosc jest równa ważniejszy jest styl bliżej elementu, czyli z reguły ten
-                            ponizej</b>
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">Coolors</h3>
-                    <p> Strona na której mozemy generowac palety kolorów które sie ze soba nie gryza <a
-                            href="https://coolors.co/">Wejdz tutaj</a> </p>
-                </section>
-                <section>
-                    <h3 class="article-header">Poczatek z JS (JavaScript)</h3>
-                    <p>JavaScript odpowiada za interakcje na stronie. Maja rozszezenei <b>.js</b>. Mają też swój
-                        znacznik <b>&lt;script></b>, Dodajemy go na samym dole naszego kodu, ale jeszcze w częsci body.
-                        Lub w oddzielnym pliku. <br>
-                        Aby podpiać plik .js ,robimy podobnie jak z css tyle ze na dole strony i uzywamy src a nie href.
-                        <b> &lt;script src="name.js">&lt;/script> </b> <br>
-                        Tak jak <b>HTML składa się z znaczników a CSS z selektorów </b> to JS składa się z :
-                        <strong>Wartości, Zmiennych, Funkcji, Literałów, Obiektów i Operacji porównywania.</strong> <br>
-                        <b>"Wartości"</b> w JS istnieją jak liczby w Matematyce są niezmienialne. My się jedynie do nich
-                        odnosimy. <br>
-                        <b>"Funkcje"</b> Wywołują jakieś działania, maja one swoje parametry.
-                        np: <b>alert('name');</b> wyswietli nam okienko powitalne na stronie o nazwie name.
-                        <b>console.log('name');</b> wyswietli nam nazwe w consoli. <br>
-                        <b>"Zmienne"</b> To takie połaczenie miedzy nazwa a wartością, coś jakby podstawiac cos pod x.
-                        tworzymy ja za pomoca polecenia <b>const nazwa = 'wartosć';</b> Liczby zapisujemy bez
-                        pojedynczych apostrofow <br>
-                        wazne ze gdy posdtawiamy zmienna o danej nazwie do jakiejs funkcji nie używamy juz apostrofów np
-                        <b>console.log(name);</b> <br>
-                        <b>"Literały"</b> - Tworzymy je za pomocą backtickow, kopnietych apostrofów <b> (``); </b>
-                        Dzieki literalom lączymy np kilka zmiennych razem, tworzymy kombinacje. <br>
-                        np <b>console.log(`Cześć jestem ${zmienna} i mam ${zmienna} lat.`);</b>
-
-                    </p>
-                </section>
-
-            </article>
-            <article>
-                <h2 class="week-header">Tydzień 4</h2>
-                <section>
-                    <h3 class="article-header">GIT - system kontroli wersji</h3>
-                    <p> <b>GIT</b> - to świetne narzędzie do zapisywania zmian w naszym kodze, zachowuje nam
-                        jednocześnie możliwość cofania się do poprzednich zapisów <br>
-                        <strong>Podstawowe komendy w gicie</strong> - poruszamy sie z pozycji terminala lub w VCS: <br>
-                        <b>git add .</b> -dodaje repozytorium, lub pliki do repozytorium w danym katalogu w ktorym sie
-                        znajdujemy. <br>
-                        <b>git status</b> -pozwala nam podejzec jakie pliki mamy w naszym repozytorium i czy sa jakies
-                        zmiany. <br>
-                        <b>git commit -m "opis commitu"</b> -commituje , zapisuje zmiany. Warto commitowac jak
-                        najczesciej. <br>
-                        <b>gitk</b> - Otwiera nam program git gdzie mozemy śledzić nasze zmiany. <br>
-                        <b>git push</b> - wypycha lokalne zmiany do <b> GitHuba</b> <br>
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">GitHub </h3>
-                    <p><b>GitHub</b> Jest to server na którym możemy umieszczać nasze repozytoria, commitowac i śledzić
-                        zmiany. <br>
-                        W późniejszej pracy GitHub bedzie nam służył jako nasze CV , oraz do pracy z ludźmi czy też do
-                        rozwiązywania problemów. 
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">Nowe Znaczniki w HTML </h3>
-                    <p><b>&lt;div></b> Jest to nie semantyczny znacznik, służy do opakowania czegoś jeśli brakuje nam znaczników semantycznych. <br>
-                         
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">Nowe Włściwości w CSS </h3>
-                    <p><b>{displey: inline , block , inline-block;}</b> Wartość inline jest domyślna np dla znacznika "a". Ustawia ona wszystko w lini obok siebie.<br>
-                        Wartość block ustawia nam elementy jeden pod drugim. Wartość inline-block ustawia nam elementy w lini ale mozemy zastosowac dzieki temu wlasności <br>
-                        przypisane tylko dla wartości blokowych jak width i hight. <br>
-                        <b>{width, max-width min-width: 0px;}</b> Właściwość ustawia nam szerokość, przewaznie uzywamy jednostki piksela px<br>
-                        <b>{hight, max-hight, min-hight: 0 px;}</b> Właściwość ustawia nam wysokość, przewaznie uzywamy jednostki piksela px<br>
-                        <b>{overflow:hidden,visible,auto;}</b> Wartość hidden ucina nam , chowa wszystko co wystaje poza nasz element. Np schowa tekst który wystaje poza box o zadanych wymiarach<br>
-                        Wartość visible pokazuje nam to co wystaje, jest to wartość domyślna. Wartość auto zachowuje sie jak hidden ale daj nam scrolla zeby zobaczyc tresc w środku. <br>   
-                        <b>{padding: 16px;}</b> Jest to wewnetrzny margines. Pokazuje nam o ile bedzie odsuniety tekst od naszego tla elementu. <br>
-                        <b>{border: 16px solid #fe162a;}</b> Jest to ramka naszego elementu. Podajemy jej 3 wartości (wielkość, styl lini, kolor) <br>
-                        <b>{margin 16px;}</b> Jest to zewnetrzny margines. Pokazuje o ile beda od siebie odsuniete elementy. <br>
-                        Te 3 opcje powyzej sa swietnie widoczne w podgladzie w narzedziach devloperskich. Dla padding i margin mozemy ustawic od 1 do 4 wartosci. (kazda krawedz inna) <br>
-                        W kazdym przypadku mozemy uzywac pelnych komęd np border-right czy margin-left. Ale przydac to sie moze chyba tylko przy ramce jesli chcemy miec rozne style z kazdej strony. <br>
-                        <b>{border-radius: 16px lub 50%;}</b> Pozwala nam zaokrąglic krawedzie naszej ramki. 16px sa to male zaokraglenia, 50%da nam koło. <br>
-                        <b>{margin: 16px auto;}</b> Super opcja na wycentrowanie czegos, ustawia nam marfinesy automatycznie w rownej odleglowsci od krawedzi ekranu, prawo lewo. <br>
-                        Jedyne o czym musimy pamietać to zadać width dla naszego elemementu bo inaczej to nie zadziała. <br>
-                        <b>{box-sizing: border-box;}</b> Ta własność ustawia nam wymiar boxa w zaleznosci od obramowania. Co znaczy ze nadane wymiary dla elementu width i hight bede tyczyc sie borderu. <br>
-                        Dzieki temu po zadaniu interesujacego nas paddingu nie musimy liczyc jak wielki ma byc element w srodku. <br>
-                        <b>{position: static, relative, absolute, fixed, sticky;}</b> Są to własności służce do pozycjonowania elementu. Static jest własnościa domyślna. <br>
-                        Relative jest własnościo specjalna ktora daje mozliwosci. Generalnie element bedzie sie ustawiac jak w static ale jesli ja zdefiniujemy pozycja ta staje sie rodzicem. <br>
-                        Absolute równiez bedzie zachowywac sie jak static samdzielnie ale jesli gdzies w drzewku wyzej jest zdefiniowana pozycja relativ bedzie sie odnosil tylko do danego elementu. <br>
-                        Fixed Element jest zamocowany na stałe do ekranu i przewija sie razem z ekranem (pływa) gdy scrolujemy ale ciagle w wyznaczonej pozycji. <br>
-                        Sticky Działa podobnie jak absolut i fixed razem. bardzo fajna pozycja wozi sie z nami tak jak fixed ale tylko w obrebie elementu rodzica plus tekst go oplywa. <br>
-                        <b>{top, right, bottom, left: 16px, 50%;}</b> Sa to właściwości do recznego pozycjonwania elementu, jak w układzie wspołrzędnych. <br>
-                        <b>{z-index: 100;}</b> Nadaje wirtualną pozycji w naszym kodzie. np. jak 2 elementy nakładaja sie na siebie i chcemy ustalic ktory bedzie widoczny. <br>
-                        <b>{float: left, right, top, bottom;}</b> Słuzy do tego aby dany element był oplywany przez tekst lub inne elementy. Nie uzywamy go do budowy leyotow strony! <br>
-                        <b>{clear: left, right;}</b> Czysci nam floaty jesli wystaja nam poza element czyli działa jak hidden w overflow z ty ze scina z lekkim odstepem jakby na padding. <br>
-                     
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">Jednostki w CSS </h3>
-                    <p><b>Pixele "px"</b> Ekran składa się z pixele wiec jest to domyslna jednostka. Jednostke trzymamy przy liczpie , bez spacji. <br>
-                        <b>Procenty "%"</b>Ustawiaja nam wymiar procentowo do wielkości widzianego okna, a wiec gdy zwijamy okno element tez nam sie zwinie.<br>
-                        <b>Viewport width , Viewport hight "vw" "vh" np 50vw</b> Bardzo fajna jednostka działa jak procenty ale odnosi sie do calego okna. Przydatna gdy mamy element w elemencie<br>
-                        W przypadku procentow 2 okna zmniejsza nam sie proporcjonalnie, w przypadku viewport juz tak nie bedzie. Jednostka ta bedzie brala za punkt wyjscia caly ekran a nie okno rodzica <br>
-
-                    </p>
-                </section>
-                <section>
-                    <h3 class="article-header">JS ciag dalszy </h3>
-                    <p><b>Zmienne let , const , VAR</b> <br>
-                        <b>const</b>- ma stałe połączenie z jedną wartością i tego połączenia nie możemy zmienić <br>
-                        <b>let</b>- jest to połaczenie zmiennej które mozemy zmienniac. Ale jej nazwe definiujemy tylko raz.<br> 
-                        <b>VAR</b> -Bedzi o tym pożniej , narazie nie używamy.
-                    </p>
-                    <p><b>Typy proste w JS</b>Uzywamy przy zmiennych. Mozemy je sprawdzic za pomoca komenty 'typeof' spacja 'nazwa' <br>
-                        <b>String</b> - tekt, otaczamy pojedunczym lub podwojnym apostrofem <br>
-                        <b>Number</b> -liczba <br>
-                        <b>Bigint</b> -duża liczna , wieksza niz 2^53 <br>
-                        <b>boolean</b> - wartosc true lub false , slowa te dzialaja bez apostrofów <br>
-                        <b>null</b> - wartosc celowo niezdefiniowana, np gdy chcemy zdefiniowac zmienna a nie mamy jeszcze informacji o je wartości <br>
-                        <b>undefined</b> - brak definicji <br>
-                        <b>*symbol</b>- tworzy "unikalne opakowanie"
-                    </p>
-                </section>
-            </article>
-        </section>
-
+            <p>
+              <strong>Poznajmy tez atrbuty</strong> <br />
+              <b>Atrybut id, &lt; element id="name"> </b> - Identyfikuje element
+              (przydaje se w nawigacji wewnatrze dokumentu). <br />
+              Żeby przejść do danego miejsca o tym id używamy znacznika
+              <b>
+                &lt; a href="#name">Przejdz do name &lt; /a>
+              </b>
+              Bardzo ważne żeby użyć <b># przed nazwą</b> inaczej nie zadziałą.
+              <br />
+              <b>Atrybut alt</b> - Tekst Alternatywny dla przeglarki.
+              Wykorzystywany przy wstawianiu zdjęcia.
+              <br />
+              <b>Atrybut Style, &lt; element style="własność:wartość;"></b> Jest
+              to tak zwane stylowanie inline , bezposrednio w znaczniku. Ale
+              raczej tego nie używamy bo tworzy nam bałagan. <br />
+              <b>Atrybut class, &lt; element class="name"></b> Atrybut ten ma
+              funkcje jak atrybut id, znakuje nam element. Roznica jest taka ze
+              w przypadku class używamy <b>.przed nazwa</b> <br />
+              do identyfikacji nazwy np <b>.name</b> . To samo ma sie w
+              przypadku stylowania również używamy .name aby ostylowac element o
+              tej clasie. <br />
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Kanban i Terminal</h3>
+            <p>
+              <b>Kanban</b> - to planowanie pracy za pomacą tablicy składającej
+              się z kolumn ( Przeważnie 3: Do zrobienia, W Trakcie, Zrobione),
+              Umieszczamy tam nasze zadania i kolejno przesuwamy. <br />
+              Dzięki temu śledzimy postępy naszej pracy. Taką talice możemy
+              stworzyć offline jak i w online w przeglądarce na stronie
+              <a href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a
+              >.
+              <br />
+              <b>Terminal</b> - narzędzie do przesuwania się między folderami za
+              pomocą wiersza poleceń. <br />
+              Podstawowoe komendy w Terminalu:
+              <strong>
+                cmd , cd "nazwa" , cd.. , cd..\.. , dir , mkdir "nazwa" , code .
+                ,</strong
+              >
+              <br />
+              oznaczają one kolejno: włączenie teraminala z menu start,
+              przejscie do katalogu o danej nazwie, przejscie do katalogu wyżej,
+              lub też 2 wyżej, dir - pokazuje zawartość katalogu, <br />
+              tworzenie nowego folderu o danej nazwie, Odpalaenie Visual Code
+              Studio w aktualnym folderze.
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">CSS ciąg dalszy</h3>
+            <p>
+              <b>Stylowanie przez id</b> - Pamiętamy żeby uzyć
+              <b># przed nazwa</b> podczas stylowania <br />
+              <b>Stylowanie przez class</b> - Pamietamy żeby użyć
+              <b>. przed nazwa </b> podczas stylowana <br />
+              <b>Stylowanie inline</b> - Stylowanie bezpośrednio w znaczniku,
+              żadko używane. <br />
+              Własność <b>!important</b> wpisana w selektorze np { color: red
+              !important; } jest najwazniejsza reguła która zabija wszystkie
+              inne. Ale staramy sie jej nie używać. <br />
+              <b>Zagnieżdzanie elementów</b> - Stylowanie przez elementy przez
+              zagnieżdzanie. W tym wypadku podajemy 2 elementy , ten który
+              chcemy ostylowac i ten z drzewka wyżej. <br />
+              Jest to ważniejsze niż podanie tylko 1 elementu i ostyluje nam
+              tylko elemetny z tego drzewka ktore wpisalismy jako pierwsze.
+              <br />
+              <i>Specyficzność CSS</i> Czyli co jest wązniejsze: <br />
+              <img
+                id="zasadaWaznosci"
+                src="specyficznosc-css.PNG"
+                alt="zasada-waznosci-css"
+              />
+              <br />
+              <b
+                >Jesli specyficznosc jest równa ważniejszy jest styl bliżej
+                elementu, czyli z reguły ten ponizej</b
+              >
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Coolors</h3>
+            <p>
+              Strona na której mozemy generowac palety kolorów które sie ze soba
+              nie gryza <a href="https://coolors.co/">Wejdz tutaj</a>
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Poczatek z JS (JavaScript)</h3>
+            <p>
+              JavaScript odpowiada za interakcje na stronie. Maja rozszezenei
+              <b>.js</b>. Mają też swój znacznik <b>&lt;script></b>, Dodajemy go
+              na samym dole naszego kodu, ale jeszcze w częsci body. Lub w
+              oddzielnym pliku. <br />
+              Aby podpiać plik .js ,robimy podobnie jak z css tyle ze na dole
+              strony i uzywamy src a nie href.
+              <b> &lt;script src="name.js">&lt;/script> </b> <br />
+              Tak jak <b>HTML składa się z znaczników a CSS z selektorów </b> to
+              JS składa się z :
+              <strong
+                >Wartości, Zmiennych, Funkcji, Literałów, Obiektów i Operacji
+                porównywania.</strong
+              >
+              <br />
+              <b>"Wartości"</b> w JS istnieją jak liczby w Matematyce są
+              niezmienialne. My się jedynie do nich odnosimy. <br />
+              <b>"Funkcje"</b> Wywołują jakieś działania, maja one swoje
+              parametry. np: <b>alert('name');</b> wyswietli nam okienko
+              powitalne na stronie o nazwie name.
+              <b>console.log('name');</b> wyswietli nam nazwe w consoli. <br />
+              <b>"Zmienne"</b> To takie połaczenie miedzy nazwa a wartością, coś
+              jakby podstawiac cos pod x. tworzymy ja za pomoca polecenia
+              <b>const nazwa = 'wartosć';</b> Liczby zapisujemy bez pojedynczych
+              apostrofow <br />
+              wazne ze gdy posdtawiamy zmienna o danej nazwie do jakiejs funkcji
+              nie używamy juz apostrofów np
+              <b>console.log(name);</b> <br />
+              <b>"Literały"</b> - Tworzymy je za pomocą backtickow, kopnietych
+              apostrofów <b> (``); </b> Dzieki literalom lączymy np kilka
+              zmiennych razem, tworzymy kombinacje. <br />
+              np
+              <b
+                >console.log(`Cześć jestem ${zmienna} i mam ${zmienna}
+                lat.`);</b
+              >
+            </p>
+          </section>
+        </article>
+        <article>
+          <h2 class="week-header">Tydzień 4</h2>
+          <section>
+            <h3 class="article-header">GIT - system kontroli wersji</h3>
+            <p>
+              <b>GIT</b> - to świetne narzędzie do zapisywania zmian w naszym
+              kodze, zachowuje nam jednocześnie możliwość cofania się do
+              poprzednich zapisów <br />
+              <strong>Podstawowe komendy w gicie</strong> - poruszamy sie z
+              pozycji terminala lub w VCS: <br />
+              <b>git add .</b> -dodaje repozytorium, lub pliki do repozytorium w
+              danym katalogu w ktorym sie znajdujemy. <br />
+              <b>git status</b> -pozwala nam podejzec jakie pliki mamy w naszym
+              repozytorium i czy sa jakies zmiany. <br />
+              <b>git commit -m "opis commitu"</b> -commituje , zapisuje zmiany.
+              Warto commitowac jak najczesciej. <br />
+              <b>gitk</b> - Otwiera nam program git gdzie mozemy śledzić nasze
+              zmiany. <br />
+              <b>git push</b> - wypycha lokalne zmiany do <b> GitHuba</b> <br />
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">GitHub</h3>
+            <p>
+              <b>GitHub</b> Jest to server na którym możemy umieszczać nasze
+              repozytoria, commitowac i śledzić zmiany. <br />
+              W późniejszej pracy GitHub bedzie nam służył jako nasze CV , oraz
+              do pracy z ludźmi czy też do rozwiązywania problemów.
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Nowe Znaczniki w HTML</h3>
+            <p>
+              <b>&lt;div></b> Jest to nie semantyczny znacznik, służy do
+              opakowania czegoś jeśli brakuje nam znaczników semantycznych.
+              <br />
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Nowe Włściwości w CSS</h3>
+            <p>
+              <b>{displey: inline , block , inline-block;}</b> Wartość inline
+              jest domyślna np dla znacznika "a". Ustawia ona wszystko w lini
+              obok siebie.<br />
+              Wartość block ustawia nam elementy jeden pod drugim. Wartość
+              inline-block ustawia nam elementy w lini ale mozemy zastosowac
+              dzieki temu wlasności <br />
+              przypisane tylko dla wartości blokowych jak width i hight. <br />
+              <b>{width, max-width min-width: 0px;}</b> Właściwość ustawia nam
+              szerokość, przewaznie uzywamy jednostki piksela px<br />
+              <b>{hight, max-hight, min-hight: 0 px;}</b> Właściwość ustawia nam
+              wysokość, przewaznie uzywamy jednostki piksela px<br />
+              <b>{overflow:hidden,visible,auto;}</b> Wartość hidden ucina nam ,
+              chowa wszystko co wystaje poza nasz element. Np schowa tekst który
+              wystaje poza box o zadanych wymiarach<br />
+              Wartość visible pokazuje nam to co wystaje, jest to wartość
+              domyślna. Wartość auto zachowuje sie jak hidden ale daj nam
+              scrolla zeby zobaczyc tresc w środku. <br />
+              <b>{padding: 16px;}</b> Jest to wewnetrzny margines. Pokazuje nam
+              o ile bedzie odsuniety tekst od naszego tla elementu. <br />
+              <b>{border: 16px solid #fe162a;}</b> Jest to ramka naszego
+              elementu. Podajemy jej 3 wartości (wielkość, styl lini, kolor)
+              <br />
+              <b>{margin 16px;}</b> Jest to zewnetrzny margines. Pokazuje o ile
+              beda od siebie odsuniete elementy. <br />
+              Te 3 opcje powyzej sa swietnie widoczne w podgladzie w narzedziach
+              devloperskich. Dla padding i margin mozemy ustawic od 1 do 4
+              wartosci. (kazda krawedz inna) <br />
+              W kazdym przypadku mozemy uzywac pelnych komęd np border-right czy
+              margin-left. Ale przydac to sie moze chyba tylko przy ramce jesli
+              chcemy miec rozne style z kazdej strony. <br />
+              <b>{border-radius: 16px lub 50%;}</b> Pozwala nam zaokrąglic
+              krawedzie naszej ramki. 16px sa to male zaokraglenia, 50%da nam
+              koło. <br />
+              <b>{margin: 16px auto;}</b> Super opcja na wycentrowanie czegos,
+              ustawia nam marfinesy automatycznie w rownej odleglowsci od
+              krawedzi ekranu, prawo lewo. <br />
+              Jedyne o czym musimy pamietać to zadać width dla naszego
+              elemementu bo inaczej to nie zadziała. <br />
+              <b>{box-sizing: border-box;}</b> Ta własność ustawia nam wymiar
+              boxa w zaleznosci od obramowania. Co znaczy ze nadane wymiary dla
+              elementu width i hight bede tyczyc sie borderu. <br />
+              Dzieki temu po zadaniu interesujacego nas paddingu nie musimy
+              liczyc jak wielki ma byc element w srodku. <br />
+              <b>{position: static, relative, absolute, fixed, sticky;}</b> Są
+              to własności służce do pozycjonowania elementu. Static jest
+              własnościa domyślna. <br />
+              Relative jest własnościo specjalna ktora daje mozliwosci.
+              Generalnie element bedzie sie ustawiac jak w static ale jesli ja
+              zdefiniujemy pozycja ta staje sie rodzicem. <br />
+              Absolute równiez bedzie zachowywac sie jak static samdzielnie ale
+              jesli gdzies w drzewku wyzej jest zdefiniowana pozycja relativ
+              bedzie sie odnosil tylko do danego elementu. <br />
+              Fixed Element jest zamocowany na stałe do ekranu i przewija sie
+              razem z ekranem (pływa) gdy scrolujemy ale ciagle w wyznaczonej
+              pozycji. <br />
+              Sticky Działa podobnie jak absolut i fixed razem. bardzo fajna
+              pozycja wozi sie z nami tak jak fixed ale tylko w obrebie elementu
+              rodzica plus tekst go oplywa. <br />
+              <b>{top, right, bottom, left: 16px, 50%;}</b> Sa to właściwości do
+              recznego pozycjonwania elementu, jak w układzie wspołrzędnych.
+              <br />
+              <b>{z-index: 100;}</b> Nadaje wirtualną pozycji w naszym kodzie.
+              np. jak 2 elementy nakładaja sie na siebie i chcemy ustalic ktory
+              bedzie widoczny. <br />
+              <b>{float: left, right, top, bottom;}</b> Słuzy do tego aby dany
+              element był oplywany przez tekst lub inne elementy. Nie uzywamy go
+              do budowy leyotow strony! <br />
+              <b>{clear: left, right;}</b> Czysci nam floaty jesli wystaja nam
+              poza element czyli działa jak hidden w overflow z ty ze scina z
+              lekkim odstepem jakby na padding. <br />
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">Jednostki w CSS</h3>
+            <p>
+              <b>Pixele "px"</b> Ekran składa się z pixele wiec jest to domyslna
+              jednostka. Jednostke trzymamy przy liczpie , bez spacji. <br />
+              <b>Procenty "%"</b>Ustawiaja nam wymiar procentowo do wielkości
+              widzianego okna, a wiec gdy zwijamy okno element tez nam sie
+              zwinie.<br />
+              <b>Viewport width , Viewport hight "vw" "vh" np 50vw</b> Bardzo
+              fajna jednostka działa jak procenty ale odnosi sie do calego okna.
+              Przydatna gdy mamy element w elemencie<br />
+              W przypadku procentow 2 okna zmniejsza nam sie proporcjonalnie, w
+              przypadku viewport juz tak nie bedzie. Jednostka ta bedzie brala
+              za punkt wyjscia caly ekran a nie okno rodzica <br />
+            </p>
+          </section>
+          <section>
+            <h3 class="article-header">JS ciag dalszy</h3>
+            <p>
+              <b>Zmienne let , const , VAR</b> <br />
+              <b>const</b>- ma stałe połączenie z jedną wartością i tego
+              połączenia nie możemy zmienić <br />
+              <b>let</b>- jest to połaczenie zmiennej które mozemy zmienniac.
+              Ale jej nazwe definiujemy tylko raz.<br />
+              <b>VAR</b> -Bedzi o tym pożniej , narazie nie używamy.
+            </p>
+            <p>
+              <b>Typy proste w JS</b> Uzywamy przy zmiennych. Mozemy je
+              sprawdzic za pomoca komenty 'typeof' spacja 'nazwa' <br />
+              <b>String</b> - tekt, otaczamy pojedunczym lub podwojnym
+              apostrofem <br />
+              <b>Number</b> -liczba <br />
+              <b>Bigint</b> -duża liczna , wieksza niz 2^53 <br />
+              <b>boolean</b> - wartosc true lub false , slowa te dzialaja bez
+              apostrofów <br />
+              <b>null</b> - wartosc celowo niezdefiniowana, np gdy chcemy
+              zdefiniowac zmienna a nie mamy jeszcze informacji o je wartości
+              <br />
+              <b>undefined</b> - brak definicji <br />
+              <b>*symbol</b>- tworzy "unikalne opakowanie" nie jest to narazie
+              istotna wiedza.
+            </p>
+          </section>
+        </article>
+      </section>
     </main>
     <footer>
-        <h4>Jacek Kirpsza</h4> <a href="#top">Wróć na górę strony</a> <br>
-        <img src="wtf-logo-color.png" alt="Logo wtf color">
+      <h4>Jacek Kirpsza</h4>
+      <a href="#top">Wróć na górę strony</a> <br />
+      <img src="wtf-logo-color.png" alt="Logo wtf color" />
     </footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
