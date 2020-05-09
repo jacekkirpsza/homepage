@@ -1,24 +1,29 @@
-h4 {
-  color: #21069c;
-}
-h1 {
-  color: #721216;
-  background-color: #f7d4db;
-}
-h2 {
-  color: #796011;
-  background-color: #c4cc4e;
-}
-body {
+.body {
   background: #ecfee8;
   width: 100%;
   margin: 16px auto;
 }
-footer {
+.footer {
   background-color: #fcf6b1;
+  border-radius: 32px;
 }
-#logowtf {
-  background: black;
+.footer__name {
+  color: tomato;
+  background: turquoise;
+  width: 1000px;
+  padding: 1px 400px;
+  margin: 1px auto;
+  box-sizing: border-box;
+}
+.footer__link {
+  width: 1000px;
+  padding-left: 385px;
+  margin: 16px auto 1px;
+  box-sizing: border-box;
+  display: block;
+}
+.footer__logo {
+  padding-left: 450px;
 }
 #mojezdjecie {
   width: 220px;
@@ -34,31 +39,61 @@ footer {
 #zasadaWaznosci {
   max-height: 3cm;
 }
-.logo-header {
-  color: #331832;
-  width: 500px;
-  margin: 16px auto;
+
+.week {
+  color: #796011;
+  background-color: #c4cc4e;
+  padding-left: 435px;
 }
-.week-header {
-  color: #41337a;
-  background: #c2efeb;
-}
-.main-header {
-  color: #331832;
-  background: #e1b07e;
-}
-.article-header {
+.week__title {
   color: #748b75;
   background: #ccffcb;
 }
+.week__article {
+  margin: 6px;
+  width: 1000px;
+  background: #e4fae4;
+}
+
+.main-header {
+  color: #331832;
+  background: #e1b07e;
+  height: 64px;
+  border: 4px double #16e4eb;
+  border-radius: 32px;
+  padding: 32px 40% 0;
+}
+
 .body-header {
   background: #fcf6b1;
+  border-radius: 16px;
+}
+.body-header__logo {
+  color: #21069c;
+  width: 500px;
+  margin: 16px auto;
+}
+.body-header__logo--picture {
+  background: black;
+  width: fit-content;
+  margin: 0;
 }
 main {
   width: 1000px;
   margin: 16px auto;
 }
-nav {
-  width: 650px;
+.navigation {
+  width: 55%;
   margin: 16px auto;
+  padding-bottom: 8px;
+}
+.navigation__link {
+  padding: 6px;
+}
+.navigation__link--homepage {
+  background: #a9edee;
+}
+.special-text {
+  margin: 2px 6px 2px 0;
+  padding-left: 6px;
 }
