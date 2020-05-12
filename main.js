@@ -57,3 +57,21 @@ const calculateNew = (age) => {
 
 console.log(calculateNew(1))
 
+const Planet = {
+    name: 'earth',
+    age: 2000,
+    poulation: true,
+    kick: (target) => { 
+        return (`Kick ${target} in ass`)
+    },
+    King: {
+        name: 'Jacek',
+        age: 29,
+    }
+
+}
+
+console.log(Planet.King.name)
+
+const target = 35
+console.log(Planet.kick(target))
