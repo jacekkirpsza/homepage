@@ -75,3 +75,5 @@ console.log(Planet.King.name)
 
 const target = 35
 console.log(Planet.kick(target))
+
+console.log(console)
