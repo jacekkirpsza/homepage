@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <link rel="stylesheet" href="normalize.css" type="text/css" />
   <link rel="stylesheet" href="style.css" type="text/css" />
+
+
 </head>
 
 <body class="body">
@@ -526,13 +529,13 @@
                 <caption>
                   Ważne ! - Tabel nie używamy do budowania layout ów.
                 </caption>
-                <tr>
+                <tr class="table__row">
                   <th>Nazwa znacznika</th>
                   <th>Opis znacznika</th>
                 </tr>
 
               </thead>
-              <tbody>
+              <tbody class="table__body">
                 <tr>
                   <td>&lt;tr></td>
                   <td>table row, wiersz tabeli</td>
@@ -563,6 +566,21 @@
 
 
           </ul>
+          </p>
+        </section>
+        <section>
+          <h3 class="week__title">Normalizacja vs reset</h3>
+          <p class="week__article">
+            <b class="special-text">Normalizacja</b> - Ujednolica style domyślne tak aby w każdej przegladarce strona
+            wyglądała jednakowo. I w ty celu
+            strorzono specjalny plik ze stylami <b> normalize.css </b> który możemy pobrać i wkleić do naszego pliku
+            normalize. <br> Warto też dodać formulke w CSS:
+            <b>box-sizing: border-box dla całego html, oraz dla *, *:before *:after box-sizing: inherit.</b> <br>
+            <b class="special-text">Reset</b> - Resetuje wszystkie domyślne style. Robimy to w CSS zmieniając wartości
+            styli domyślnych na 0,
+            np, <b>*</b> <i> (jest to selektor uniwersalny, wybiera wszystkie elementy na stronie )</i> { margin: 0;
+            padding: 0; , list-style: none; , outline: none; (Outline jest to podświtlanie linków jak przeskakujemy za
+            pomocą tab.)
           </p>
         </section>
       </article>
