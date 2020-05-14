@@ -583,6 +583,61 @@
             pomocą tab.)
           </p>
         </section>
+        <section>
+          <h3 class="week__title">Flexbox - ustawianie elementów za pomocą własności flex</h3>
+          <p class="week__article">
+            <b class="special-text">Wlasnoś display: flex; </b> - wplywa na rozłozenie elementów wzgledem siebie,
+            wlasność ta pracuje w osi poziomej i pionowej
+            mozna wiec to rozłożenie zmieniać za pomocą innych selektorów:
+          <ul>
+            <li>flex-direction: row;, column;, row-reverse;, column-reverse;; (domyślna wartość to row) <br>
+              selektor ten pokazuje od którego kierunku będzie zaczynał ustawiać nam elementy.</li>
+            <li>flex-wrap: nowrap;, wrap;, wrap-reverse; - jest to zawijanie tekstu wiersza, columny,
+              domyślna wartość to nowrap. Wrap zachowuje orginalne wymiary elementów i je ustawia pod sobą,
+              tak jak zawijanie tekstu.
+            </li>
+            <li>flex-flow: (flex-direction) (flex-wrap) - jest to skrócona nazwa dla 2 właściwości które podajemy razem.
+            </li>
+            <li>justify-content: flex-start;, flex-end;, center;, space-between;, space-around; jest to ustawienie
+              elementów
+              wzdłóż osi flex-direction. Rozmieszcza wszystkie elementy zgodnie z podanymi wartoścami.
+            </li>
+            <li>align-content: strech;, flex-start;, flex-end;, center;, space-between;, space-around; ustawia elementy
+              w
+              kirunku przeciwnym do flex-direction. Działa tak samo jak justify-content. Domyślny strech rozciąga
+              elementy.
+            </li>
+            <li>align-items: strech;, flex-start;, flex-end;, center;, baseline; - ustawia elementy wzdłóż osi
+              przeciwnej do
+              flex-direction jak w przypadku align-content ale w obrębie jednego wiersza. Czyli jak elementy w wierszu
+              mają
+              różne wymiary domyślny stech je rozciągnie aby pasowały do największego. A inne wartości ustawią je
+              inaczej.
+            </li>
+            <li>align-self: strech;, flex-start;, flex-end;, center;, baseline; - Działą jak align-items ale dla
+              pojedynczego
+              elementu, a wiec wpisujemy tą własność w konkretnym elemencie, pozostałe piszemy w całym opakowaniu.
+            </li>
+            <li>order:0, (liczba całkowita) - determinuje nam kolejność elementów, wzależności od liczby. Domyślnie jest
+              0</li>
+            <li>flex-grow: 0, (liczba/proporcja) domyślnie mamy 0, odpowiada nam za to jak bardzo elementy mają rosnąć w
+              stosunku
+              do pozostałych w danym wierszu. Jeśli wszystkim damy 1 rozciągna sie nie zostawiając marginesów.
+            </li>
+            <li>flex-shrink: 1, (liczba/proporcja) Odpowiada za kurczenie sie elementów przy zwijaniu. Przy wartości 0
+              elementy nie skurczą sie mocniej niż ich zapisany rozmiar. Domyślnie jest 1, czyli kurcza sie jadnakowo.
+            </li>
+            <li>flex-basis: none, (rozmiar bazowy) - określa nam minimalą wielkośc naszego elementu bez znaczenia w
+              któtym
+              kierunku ustawimy oś głowno. tzn jak ustawimy na 100px to element bedzie miał 100 w poziomie przy kierunku
+              row,
+              a jesli bysmy zmienili kierunek na column to przyjmie on 100 w pionie.
+            </li>
+            <li>flex: skrót pisujacy 3 wlasności: flex-grow flex-shrink flex flex-basis
+            </li>
+          </ul>
+          </p>
+        </section>
       </article>
     </section>
   </main>

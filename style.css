@@ -2,7 +2,8 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before *:after {
+*,
+*:before *:after {
   box-sizing: inherit;
 }
 
@@ -91,12 +92,12 @@ main {
   margin: 16px auto;
 }
 .navigation {
-  width: 55%;
-  margin: 16px auto;
-  padding-bottom: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .navigation__link {
-  padding: 6px;
+  align-items: center;
 }
 .navigation__link--homepage {
   background: #a9edee;
@@ -107,7 +108,7 @@ main {
 }
 
 .learn--js {
-  font-family: Arial, Helvetica, sans-serif ;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bolder;
 }
@@ -115,17 +116,14 @@ main {
 .table {
   width: 100%;
   border: 2px solid gray;
-  
-  
+  text-align: center;
 }
 
 .table__row {
   background: yellowgreen;
-
 }
 
 .table__body {
   color: #e9393f;
   background: rgb(184, 231, 91);
-  
 }
