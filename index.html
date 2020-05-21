@@ -30,6 +30,7 @@
       <a class="navigation__link" href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a>
       <a class="navigation__link" href="https://coolors.co/">Coolors</a>
       <a class="navigation__link" href="https://github.com/jacekkirpsza">GitHub</a>
+      <a class="navigation__link" href="https://www.figma.com/">Figma</a>
     </nav>
   </header>
   <main>
@@ -642,31 +643,98 @@
           <h3 class="week__title">Tła - Background :D </h3>
           <p class="week__article">
             <b class="special-text">Własności: </b>
-            <ul>
-              <li>background-image: url('ścieżka do pliku'); Aby w VCS wejść do innego katalogu podajemy ścieżkę ('../images/name.jpg')
-                co oznacza ze wchodzimy katalog wyżej, następnie w katalog images i weybieramy plik.
-              </li>
-              <li>background-position: podajemy 2 wartości pierwsza dla kierunku y druga dla kierunku x. Domyślnie jest 0 0,
-                Możemy podać np: cener right; , top left; , 100px 100%;
-              </li>
-              <li>background-repeat: repeat;, repeat-x;, repeat-y;, no-repeat;, round;, space;. Domyślnie jest repeat, czyli 
-                powtażanie naszego tła, ale można też zastosowaćinne opcje.
-              </li>
-              <li>background-attachment: scroll;, fixed;, local;. Odpowiada za pozycje tła podczas jego przewijania
-              </li>
-              <li>background-origin: padding-box;, border-box;, content-box;. Odpowiada za to gdzie nasze tło będzie sie
-                zaczynało
-              </li>
-              <li>background-clip: border-box;, padding-box;, content-box;. Mówi nam w którym miejscu nasze tło będzie cięte.</li>
-              <li>background-colour: red; ,rgba(255, 255, 255, 0,4) Jest to wartoś , przy wartościach rgba wybieramy pokoleii
-                nasycenie kolorów czerwonego, zielonego i niebieskiego a ostatni parametr odpowiada za przezroczystość.
-              </li>
-              <li>bacgroub-size:auto;, cover;, contain;, - Własność ta mówi nam jak obrazek będzie się zachowywał na stronie.</li>
-            </ul>
-            <b class="special-text">Gradienty </b> Bardzo fajne rozwiązanie na tła, mamy specjalną strone która umożliwia nam
-            stworzenie takiego gradientu i skopiowanie gotowych wartości kodu:
-             <a href="https://cssgradient.io/gradient-backgrounds/"> griadient-backrounds</a>
+          <ul>
+            <li>background-image: url('ścieżka do pliku'); Aby w VCS wejść do innego katalogu podajemy ścieżkę
+              ('../images/name.jpg')
+              co oznacza ze wchodzimy katalog wyżej, następnie w katalog images i weybieramy plik.
+            </li>
+            <li>background-position: podajemy 2 wartości pierwsza dla kierunku y druga dla kierunku x. Domyślnie jest 0
+              0,
+              Możemy podać np: cener right; , top left; , 100px 100%;
+            </li>
+            <li>background-repeat: repeat;, repeat-x;, repeat-y;, no-repeat;, round;, space;. Domyślnie jest repeat,
+              czyli
+              powtażanie naszego tła, ale można też zastosowaćinne opcje.
+            </li>
+            <li>background-attachment: scroll;, fixed;, local;. Odpowiada za pozycje tła podczas jego przewijania
+            </li>
+            <li>background-origin: padding-box;, border-box;, content-box;. Odpowiada za to gdzie nasze tło będzie sie
+              zaczynało
+            </li>
+            <li>background-clip: border-box;, padding-box;, content-box;. Mówi nam w którym miejscu nasze tło będzie
+              cięte.</li>
+            <li>background-colour: red; ,rgba(255, 255, 255, 0,4) Jest to wartoś , przy wartościach rgba wybieramy
+              pokoleii
+              nasycenie kolorów czerwonego, zielonego i niebieskiego a ostatni parametr odpowiada za przezroczystość.
+            </li>
+            <li>bacgroub-size:auto;, cover;, contain;, - Własność ta mówi nam jak obrazek będzie się zachowywał na
+              stronie.</li>
+          </ul>
+          <b class="special-text">Gradienty </b> Bardzo fajne rozwiązanie na tła, mamy specjalną strone która umożliwia
+          nam
+          stworzenie takiego gradientu i skopiowanie gotowych wartości kodu:
+          <a href="https://cssgradient.io/gradient-backgrounds/"> griadient-backrounds</a>
 
+          </p>
+        </section>
+        <section>
+          <h3 class="week__title">Figma - Program graficzny </h3>
+          <p class="week__article">
+            <b class="special-text">Przenosimy projekt wizytówki na kod </b>
+          </p>
+        </section>
+      </article>
+      <article>
+        <h2 class="week">Tydzień 6</h2>
+        <section>
+          <h3 class="week__title">Formularze </h3>
+          <p class="week__article">
+            <b class="special-text"> &lt;form> tworzymy formularz </b>
+          <ol>
+            <li>action - jest to atrybut folmularz mówi nam gdzie zostanie wysłany nasz formularz</li>
+            <li>&lt;label> Jest to nazwa naszej komórki może być oddzielnie wtedy nadajemy id lub zawierac input w
+              środku</li>
+            <li>&lt;input> Jest to podstawowy znacznik dla formularza dalej dobieramy mu już tylko atrybuty i ich
+              wartości</li>
+            <ul>
+              <li>name= nazwa komórki </li>
+              <li>type= typ komórki (text, radio,(jest to lista do wyboru) checkbox,(jest to kwadracik do zaznaczenia)
+                number,(możemy wpisywać tylko liczny), tel,(do wpisywania telefonu działa jak number)
+                email,(można wpisywać litery i liczby ale przagladarka podpowiada nam emaile domyślnie)
+                range, (jest to przesuwający sie zakres. Dla tej wartości musimy ustalić dodatkowe atrybuty min: max:
+                step: ,czyli zakres
+                i skoki naszego przesunięcia) password, (zakryje nam znaki) file, (pojawi sie okienko do wyboru plikuów)
+                submit, (tworzy nam przycisk do posumowania dajemu mu value np send i dostaniemy przycisk z namisem
+                send)
+              </li>
+              <li>id= nadajemy id dla komórki aby przypiać label do danego id </li>
+              <li>value= Jest to domyślnawartość jaka będzie wyświetlana w naszym polu</li>
+              <li>placeholder= Jest to tekst podpowiedzi który będzie znajdował sie w komórce. Nie używamy placeholderów
+                do opisywania pól, nie zastępuje on labelów poniewaz nie jest czytany przez czytniki ekranowe dla osób
+                niewidzących.
+              </li>
+              <li>checked - wpisujemy ten atrybut aby domyślnie zaznaczyć dane pole</li>
+              <li><b>method= </b>jest to atrybut przypisywany do formularza jego wartoścami sa domyslna GET i post.
+                Get jest mniej bezpieczna bo pokazuje nam wszystkie wartości w pasku adressu i tam mozna je nadpisac,
+                w metodzie post nie ma tego problemu nie mozna nadpisac wybranych wartości z formularza.
+              </li>
+              <li>enctype= atrybut ten stosujemy przy wysyłaniu plików należy go wtedy zmienić na multipart/form-data
+              </li>
+              <li>requaried - jeśli dodamy ten wymóg do inputa nie bedziemy mogli ominąc danego pola.</li>
+              <li>pattern= np "[a-zA-Z0-9]+" -są to wyrażenia reguralne, jest to wzór w jaki sposób ma byc wypelniona komórka jesli będzie 
+                wypełniona inaczej wyrzuci nam błąd. wartości, instrukcje dla patternów znajdujemy w necie  </li>
+
+
+            </ul>
+            <li>&lt;fieldset> Jest to ramka dla jakiejś grupy pól w którą wkładamy nasze inputy</li>
+            <li>&lt;legend> Jest to opis naszej ramki</li>
+            <li>&lt;select> stosujemy zamiast input dostajemy rozwijaną liste gdzie wpisyjemy opcje</li>
+            <li>&lt;option> w tym znaczniku wpsujemy dostępne opcje dla selecta przypisujemy też atrybuty jak np value
+            </li>
+            <li>&lt;textarea> wstawia pole tekstowe</li>
+
+
+          </ol>
           </p>
         </section>
       </article>

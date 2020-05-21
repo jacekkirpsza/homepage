@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1>Formularz</h1>
+
+        <form class="form" method="post" action="http://dev.cotenfrontend.pl">
+          
+            <p>
+                
+                <label> Firt name: 
+                    <input class="form__input" required type="text" name="firstName" placeholder="Please enter your First name">
+                </label>
+            </p>
+
+            <p>
+                <label> Last name: 
+                    <input class="form__input" type="text" name="lasttName" placeholder="Please enter your Last name">
+                </label>
+            </p>
+            <p>
+                <label> Phone number: 
+                    <input class="form__input" type="tel" name="phoneNumber" placeholder="Please enter your Phone Number">
+                </label>
+            </p> 
+            <p>
+                <label> Email: 
+                    <input class="form__input" type="email" name="email" placeholder="Please enter your Email">
+                </label>
+            </p>
+           
+            <p>
+                <label> Password: 
+                    <input class="form__input" type="password" name="password" placeholder="Please enter your Password">
+                </label>
+            </p>
+            <p>
+                <label> Foot size: 
+                    <input class="form__input" type="range" name="footSize" min="4" max="13" step="1">
+                </label>
+            </p>
+            <p>
+                <label> Add photo: 
+                    <input class="form__input" type="file" name="photo" >
+                </label>
+            </p>
+            <p>
+                <label for="band"> Favourite Band :</label>
+                <select class="form__input" name="favouriteBand" id="band">
+                <option value="AK-47"> AK-47</option>
+                <option value="paluch">Paluch</option>
+                <option value="dudek">Dudek</option>
+                </select>
+            </p>
+            <p>
+                <label for="textAreas">Describe Your Story</label>
+                <textarea class="form__input" name="yourStory" id="textArea" >My story is...</textarea>
+            </p>
+
+
+
+            <fieldset>
+                <legend>Adress</legend>
+                <p>
+                    <label> street: 
+                        <input class="form__input" type="text" name="street" placeholder="Please enter your street">
+                    </label>
+                </p>
+                <p>
+                    <label> City: 
+                        <input class="form__input" type="text" name="city" placeholder="Please enter your City">
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favourite Ice Creams Flavour</legend>
+                <p>
+                    <label>
+                        <input  type="radio" name="iceCream" value="chocolate"> Chocolate
+                    </label>
+                </p>
+                <p>
+                    <label> 
+                        <input type="radio" name="iceCream" value="vanila"> Vanila
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <label> 
+                <input checked type="checkbox" name="agreement" value="agree" > I Agree
+            </label>
+            </p>
+            <p>
+                <input type="submit" value="send">
+            </p>
+
+
+
+
+
+        </form>
+
+    </main>
+</body>
+
+</html>

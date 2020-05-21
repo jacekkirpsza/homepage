@@ -8,6 +8,7 @@ html {
 }
 
 .body {
+  background: #ecfee8;
   background: linear-gradient(
     328deg,
     rgba(2, 0, 36, 1) 0%,
@@ -73,7 +74,7 @@ html {
 .week__article {
   margin: 6px;
   width: 1000px;
-  background: #e4fae4;
+  background:
 }
 
 .main-header {
@@ -86,8 +87,9 @@ html {
 }
 
 .body-header {
-  background: #fcf6b1;
-  border-radius: 16px;
+  background: 
+  border-radius: ;
+  
 }
 .body-header__logo {
   color: #21069c;
