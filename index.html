@@ -31,6 +31,7 @@
       <a class="navigation__link" href="https://coolors.co/">Coolors</a>
       <a class="navigation__link" href="https://github.com/jacekkirpsza">GitHub</a>
       <a class="navigation__link" href="https://www.figma.com/">Figma</a>
+      <a class="navigation__link" href="form.html">Formularz</a>
     </nav>
   </header>
   <main>
@@ -721,8 +722,9 @@
               <li>enctype= atrybut ten stosujemy przy wysyłaniu plików należy go wtedy zmienić na multipart/form-data
               </li>
               <li>requaried - jeśli dodamy ten wymóg do inputa nie bedziemy mogli ominąc danego pola.</li>
-              <li>pattern= np "[a-zA-Z0-9]+" -są to wyrażenia reguralne, jest to wzór w jaki sposób ma byc wypelniona komórka jesli będzie 
-                wypełniona inaczej wyrzuci nam błąd. wartości, instrukcje dla patternów znajdujemy w necie  </li>
+              <li>pattern= np "[a-zA-Z0-9]+" -są to wyrażenia reguralne, jest to wzór w jaki sposób ma byc wypelniona
+                komórka jesli będzie
+                wypełniona inaczej wyrzuci nam błąd. wartości, instrukcje dla patternów znajdujemy w necie </li>
 
 
             </ul>
@@ -732,6 +734,56 @@
             <li>&lt;option> w tym znaczniku wpsujemy dostępne opcje dla selecta przypisujemy też atrybuty jak np value
             </li>
             <li>&lt;textarea> wstawia pole tekstowe</li>
+
+
+          </ol>
+          </p>
+        </section>
+        <section>
+          <h3 class="week__title">Grid czyli narzędzie do tworzenia layoutu strony </h3>
+          <p class="week__article">
+            <b class="special-text"> Grid jak go tworzymy: </b>
+          <ol>
+            <li>W css ustawiamy display: grid; dla danego kontenera. Nalezy pamietac ze grid działa tylko na swoje
+              bezpośrednie dzieci, zageszczenia dalsze ni odziedziczają własności gridowych.
+            </li>
+            <li>grid-template-columns: (wypisujemy wartości po spacji) trzorzy nam kolumny, ile wartości wpiszemy tyle
+              kolumn otrzymamy, mozna wpisać tezr wartości <b>Nowa jednostka (1fr 1 fr)</b> wtedy dostaniemy 2 jednakowe
+              kolumny na całkowita
+              szerokosc ekranu, jak wpiszemy (1 fr 2fr ) to 2 kolumna ta bedzie 2 razy wieksza. Mozna tez wpisac (100px
+              200px 1 fr)
+              teraz dostaniemy 3 kolumny gdzie 3 bedzie zajmować cala pozostało szerokość ekranu. Mozna tez użyc
+              wartości
+              <b>repeat(4, 200px)</b>. Otrzymamy teraz 4 jednakowe wiersze po 200px. Jest też taka wartość jak
+              <b>minmax(200px, 1fr)</b>
+              Otrzymujemy wtedy kolumne o określonych minimalnych i maksymalnych wymiarach.
+            </li>
+            <li>grid-template-rows: jest właśność dla wierszy działa identycznie jak dla kolumn. Możemy tego nie
+              definiować
+              wtedy wiersze ustawią nam sie automatycznie.
+            </li>
+            <li>column-gap: 16px - ustawia nam przerwe miedzy kolumnami</li>
+            <li>row-gap: 16px - ustawia nam przerwe miedy wierszami</li>
+            <li><b>grid-templates-areas: "header header" "article aside" "footer footer";
+              </b> własność ta ustawia nam grida po znacznikach, wpisujemy ja w głównym kontenerze czyli dostaniemy
+              teraz 2 kolumny i 3 wiersze. Ale tekst
+              w nich nie bedzie jeszcze właściwie uporzadkowany robimy to za pomoca nastepnej własności</li>
+            <li>grid-area: header - tą własność wpisujemy już w zagęszczeniach i w tym przypadku dla znacznika header
+              przypisujemy mu miejsce heade okreslone wczesniej w głownym zbiorniku.i tak dla kolejnych znaczników
+              przypisujemy
+              grid-area czyli miejsca gdzie maja sie znajdować. To nam uporządkuje treść.
+            </li>
+            <li>grid-column-start: 1; grid-column-end:4; - można zamaiast grid-area użyć tej własnoci i wskazac
+              bezposrednio gdzie ma sie zaczynac
+              i gdzie ma sie konczyć nasza treść. dzieki temu możemy przesuwać nasza zawartość. To samo tyczy się
+              wierszy.
+              Należy jednak wiedzieć jak numerować. Z kolumn i wierszy tworzy nam się siatka, numerujemy tylko linie
+              zaczynająć od zewnetrznej skrajenj lewej
+              , numeracje zaczynamy od 1 i tak np. start: 1; end: 3; mowi nam ze nasza treść znajdzie sie w pierwszej i
+              drugiej kolumnie. Możemy tez podać <b> end: span 3;</b> co bedzie oznaczać ze nasza treści ma biec przez 3 kolumny.
+              Sa tez własności skrócone np grid-column: 2 / 5; podajemy poczatek i koniec po sleszu.
+            </li>
+
 
 
           </ol>

@@ -87,14 +87,16 @@ html {
 }
 
 .body-header {
-  background: 
-  border-radius: ;
+  display: grid;
+  grid-template-areas: "h4 h4" "nav nav";
+  grid-template-columns: 1fr 1fr;
   
 }
 .body-header__logo {
   color: #21069c;
-  width: 500px;
   margin: 16px auto;
+  grid-area: h4;
+  grid-column: 2 / span 2;
 }
 .body-header__logo--picture {
   background: black;
@@ -109,6 +111,9 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  grid-area: nav;
+  grid-column: 1/3;
+  
 }
 .navigation__link {
   align-items: center;
