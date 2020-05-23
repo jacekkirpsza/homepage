@@ -4,41 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+  
+  
   </head>
-
-  <body>
-    <header>
-      <h4>
+  
+  <body class="body">
+    <header class="body-header">
+      <h4 class="body-header__logo">
         20.04.2020r. Początek szkolenia z
-        <a href="https://cotenfrontend.pl">
-          <img id="logowtf" src="wtf-mini.svg" alt="logo wtf-mini" /> co ten
-          frontend</a
-        >
+        <a class="body-header__logo" href="https://cotenfrontend.pl">
+          <img class="body-header__logo body-header__logo--picture" src="wtf-mini.svg" alt="logo wtf-mini" /> co ten
+          frontend</a>
       </h4>
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="o-mnie.html">O mnie</a>
-        <a href="html-wiecej.html"> HTML</a>
-        <a href="css-wiecej.html"> CSS</a>
-        <a href="js-wiecej.html"> JS</a>
-        <a href="https://validator.w3.org/nu/">Validator</a>
-        <a href="roadmap.html">Mapa Frontendu</a>
-        <a href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a>
-        <a href="https://coolors.co/">Coolors</a>
-        <a href="https://github.com/jacekkirpsza">GitHub</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"> Strona główna</a>
+        <a class="navigation__link" href="o-mnie.html">O mnie</a>
+        <a class="navigation__link" href="html-wiecej.html"> HTML</a>
+        <a class="navigation__link" href="css-wiecej.html"> CSS</a>
+        <a class="navigation__link" href="js-wiecej.html"> JS</a>
+        <a class="navigation__link" href="https://validator.w3.org/nu/">Validator</a>
+        <a class="navigation__link" href="roadmap.html">Mapa Frontendu</a>
+        <a class="navigation__link" href="https://trello.com/b/KOUj77DV/wtf-prace-domowe">Trello</a>
+        <a class="navigation__link" href="https://coolors.co/">Coolors</a>
+        <a class="navigation__link" href="https://github.com/jacekkirpsza">GitHub</a>
+        <a class="navigation__link" href="https://www.figma.com/">Figma</a>
+        <a class="navigation__link" href="form.html">Formularz</a>
       </nav>
     </header>
     <main>
       <section id="top">
-        <h1>HTML</h1>
+        <h1 class="main-header">HTML więcej</h1>
+      <div class="learn--js"></div>
       </section>
+      <div class="space"></div>
+    
+    
     </main>
-
-    <footer>
-      <h4>Jacek Kirpsza</h4>
-      <a href="#top">Wróć na górę strony</a> <br />
-      <img src="wtf-logo-color.png" alt="Logo wtf color" />
+    <footer class="footer">
+      <h4 class="footer__name">Jacek Kirpsza</h4>
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
+      <img class="footer__logo" src="wtf-logo-color.png" alt="Logo wtf color" />
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

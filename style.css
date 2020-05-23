@@ -50,12 +50,13 @@ html {
 #mojezdjecie {
   width: 220px;
   height: 300px;
-  margin: 16px 64px;
+  margin: 16px auto;
   display: block;
   border: 10px double #721216;
   border-radius: 50%;
   padding: 6px;
   box-sizing: border-box;
+
 }
 
 #zasadaWaznosci {
@@ -146,4 +147,14 @@ main {
 .table__body {
   color: #e9393f;
   background: rgb(184, 231, 91);
+}
+
+.space {
+  height: 300px;
+}
+
+.roadmap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
