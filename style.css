@@ -124,6 +124,7 @@ main {
 .special-text {
   margin: 2px 6px 2px 0;
   padding-left: 6px;
+  text-decoration: underline;
 }
 
 .learn--js {

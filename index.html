@@ -691,6 +691,8 @@
           <h3 class="week__title">Formularze </h3>
           <p class="week__article">
             <b class="special-text"> &lt;form> tworzymy formularz </b>
+          </p>
+
           <ol>
             <li>action - jest to atrybut folmularz mówi nam gdzie zostanie wysłany nasz formularz</li>
             <li>&lt;label> Jest to nazwa naszej komórki może być oddzielnie wtedy nadajemy id lub zawierac input w
@@ -737,12 +739,12 @@
 
 
           </ol>
-          </p>
+          
         </section>
         <section>
           <h3 class="week__title">Grid czyli narzędzie do tworzenia layoutu strony </h3>
           <p class="week__article">
-            <b class="special-text"> Grid jak go tworzymy: </b>
+            <b class="special-text"> Grid jak go tworzymy: </b></p>
           <ol>
             <li>W css ustawiamy display: grid; dla danego kontenera. Nalezy pamietac ze grid działa tylko na swoje
               bezpośrednie dzieci, zageszczenia dalsze ni odziedziczają własności gridowych.
@@ -780,14 +782,47 @@
               Należy jednak wiedzieć jak numerować. Z kolumn i wierszy tworzy nam się siatka, numerujemy tylko linie
               zaczynająć od zewnetrznej skrajenj lewej
               , numeracje zaczynamy od 1 i tak np. start: 1; end: 3; mowi nam ze nasza treść znajdzie sie w pierwszej i
-              drugiej kolumnie. Możemy tez podać <b> end: span 3;</b> co bedzie oznaczać ze nasza treści ma biec przez 3 kolumny.
+              drugiej kolumnie. Możemy tez podać <b> end: span 3;</b> co bedzie oznaczać ze nasza treści ma biec przez 3
+              kolumny.
               Sa tez własności skrócone np grid-column: 2 / 5; podajemy poczatek i koniec po sleszu.
             </li>
-
-
-
           </ol>
+
+        </section>
+        <section>
+          <h3 class="week__title"> Logika w JS </h3>
+          <p class="week__article">
+            <b class="special-text"> Wyrażenie logiczne "if" </b> - Wyrażenie te oddaje nam tylo 2 odpowiedzi true lub false.
+            Jeśli dostajemy true dana funkcja się wyświetli jeśli false, nie zostanie wyświetlona. Wzór tego wyrażenia to :
+           <b> if ('firstName' != 'lastName') {Wpisujemy naszą funkcje Właściwość} </b>. Kod się wyświetli bo to wyrażenie to prawda.
           </p>
+          <p class="week__article">
+            <b class="special-text"> Operatory porównania w JS  >, <, >=, <=, ==, ===, !=, !== </b> Co ciekawe znak równości to
+            == a znak równości z uwzględnieniem typu podstawowego to === . Znak nierówności t !=.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Operatory warunkowe and "&&"  i or "||" not "!"</b> Operator and spawia ze oba warunki
+            muszą być spełnione , wartość or spawia że tylko 1 warunek musi być spełniony, wartość not zaprzecza wyrażeniu.
+            np:  <b> if (('firstName' != 'lastName') && ( 32 < 30)) {Wpisujemy naszą funkcje Właściwość} </b> Kod nam się nie wykona bo 
+            tylko jedne wyrażenie jest prawdą, gdybyśmy wstawili || kod by się wykonał. 
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Słowo kluczowe "else" oraz "else if" </b> Dzieki else możemy wykonać kod pod innymi warunkami lub gdy porównanie
+           jest fałszywe. np: <b>if (('firstName' == 'lastName')  {Wykonaj kod jeśli true} else {Wykonaj kod jeśli false} </b>
+            Dzieki else if możemy dodawać kolejne warunki do naszego wyrażenia logicznego i pierwszy który będzie prawdziwy
+            zostanie wykonany.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Instrukcja "switch" </b> Podobnie jak w else if możemy podawać kolejne przypadki wyrazenia logicznego
+            tyle że to ma bardziej ścisłe sformułowanie, używamy gdy znamy dokładne wartości. <br>
+            np: <b>switch(myNumber) {case 4: console.log('hi 4'); break; case 8: console.log('hi 8'); break; default: console.log( 'hi other');}</b>
+            I jak widzimy do instrukcji switch przypisujemy takie wyrażenia jak <em>case break default</em> 
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Zapis skrócony "?" ":" </b> ? zastępuje tu if a : zastępuje else np: <br>
+            <b> (zmienna1 > zmienna2) ? true : false </b>
+          </p>
+          
         </section>
       </article>
     </section>
