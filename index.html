@@ -824,6 +824,27 @@
           </p>
           
         </section>
+        <section>
+          <h3 class="week__title">RWD (Responsive Web Design) - Media queries</h3>
+          <p class="week__article">
+            <b class="special-text"> Sercem Media querien jest @media </b> Media queries jest to dostosowanie naszej strony
+            do różnych typów przeglądarek, robimy to w naszych stylach za pomocą skrótu @media.
+          </p>
+          <ul>
+            <li>Wpisujemy @media w pliku css i dalej podajemy (screen, print, all, ..) czyli urządzenie na którym bedzie
+              dany styl zastosowany.
+            </li>
+            <li> Dalej podajemy własności jakie ma dany styl przyjmować najpopularniejsze to <b>min-width, max-width, color itd</b>
+            </li>
+            <li>Możemy to wszystko łączyć za pomocą and/not/, - np @media screen and (max-width: 1024px) { podajemy selectory
+              dla których ma to być zastosowanr}
+            </li>
+            <li>Każdy @media jest jakby odzielnym plikiem css i musimy wszystko podawać od początku, przyjmuje sie sie zasade
+              <b>mobile frst</b> co oznacza ze najpierw dostosowujemy strone do urzadzen mobilnych a nastepnie za pomoca @media
+              dostosowujemy ja do wiekszych rozdzielczości. Działa tu specyficzność wystarczy więc ponadpisywać tylko te które
+              chcemy zmienić aby nasz wyglą był dostosowany.
+            </li>
+          </ul>
       </article>
     </section>
   </main>
