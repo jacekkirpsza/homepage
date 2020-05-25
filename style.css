@@ -112,9 +112,12 @@ main {
   justify-content: space-around;
   grid-area: nav;
   grid-column: 1/3;
+  align-items: center;
 }
 .navigation__link {
-  align-items: center;
+  
+
+  
 }
 .navigation__link--homepage {
   background: #a9edee;
@@ -154,6 +157,10 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.background--js {
+  background: pink;
 }
 
 @media screen and (max-width: 425px) {
@@ -297,4 +304,10 @@ main {
     width: auto;
     margin: 16px 200px;
   }
+
+  .main-header {
+    
+    padding: 10px 35%;
+  }
 }
+

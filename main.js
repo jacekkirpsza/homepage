@@ -97,3 +97,21 @@ switch (Planet.King.age) {
   default:
     console.log("Sam już nie wime ile mam lat");
 }
+
+const click = document.querySelector(".background--js");
+console.log(click);
+
+
+
+const action = () => {
+  
+  const action = document.querySelector('.learn--js');
+  action.innerHTML = 'I po co kliknąłeś ?';
+  
+
+};
+
+
+
+
+click.addEventListener( 'click', action);

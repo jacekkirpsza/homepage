@@ -38,6 +38,7 @@
     <section id="top">
       <h1 class="main-header">Notatki z WTF</h1>
       <div class="learn--js"></div>
+      <button class="background--js"> Nie klikaj !!! </button>
       <article>
         <h2 class="week">Tydzień 1</h2>
         <section>
@@ -845,6 +846,22 @@
               chcemy zmienić aby nasz wyglą był dostosowany.
             </li>
           </ul>
+        </section>
+        <section>
+          <h3 class="week__title">Eventy , Tworzenie interakcji na stronie za pomocą JS </h3>
+          <p class="week__article">
+            <b class="special-text"> Tworzymy &lt;button>  (przycisk w HTML) </b> Aby to zrobić wstawiamy standardowy tag
+            i go opisujemy treścią która ma wyświetlać sie w środku np. <button>Przykładowy przycisk</button> 
+            Nadajemy też klase np button--js aby móc na tej klasie działać w JS.
+          </p>
+           <p class="week__article">
+            <b class="special-text"> element.addEventListener('type', listener[,options]) </b> Tworzymy zmienna dla naszego
+            elementu wskazujać nasz przycisk za pomocą querySelector. Nastepnie za pomoca addEventListener tworzymy interakcje
+            dla naszego przycisku. Type określa kiedy sie wydarzenie zadzieje i mamy do wyboru: <b>click, mouseenter, mouseleave</b>
+            czyli np wydarzenie wydarzy sie po kliknięciu , lub po najechaniu myszką na przycisk. Drugą opsią do wyboru jest listener
+            czyli nasza funkcja, tak samo wywołujemy ją za pomocą zmiennej i zmienna podstawiamy w miejsce listener.
+          </p>
+        </section>
       </article>
     </section>
   </main>
