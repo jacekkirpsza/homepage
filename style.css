@@ -25,6 +25,15 @@ html {
 
   margin: 16px auto;
 }
+
+.body--js {
+  background: pink;
+}
+
+.hamburger {
+  display: none;
+}
+
 .footer {
   background-color: #fcf6b1;
   border-radius: 32px;
@@ -115,9 +124,6 @@ main {
   align-items: center;
 }
 .navigation__link {
-  
-
-  
 }
 .navigation__link--homepage {
   background: #a9edee;
@@ -212,6 +218,7 @@ main {
     display: block;
     width: 350px;
     margin: 0 auto;
+    
   }
   .body-header__logo {
     color: #21069c;
@@ -225,7 +232,31 @@ main {
   }
   main {
     width: 350px;
-    margin: 0 auto;
+    margin: 64px auto;
+  }
+
+  .hamburger {
+    display: inline;
+    position: absolute;
+    top: 64px;
+    right: 16px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation--open {
+    padding: 16px;
+    display: block;
+  }
+
+  .navigation__link {
+    display: block;
+    padding: 2px;
+  }
+  .navigation__link--homepage {
+    background: none;
   }
 }
 
@@ -292,6 +323,10 @@ main {
     width: 700px;
     margin: 0 auto;
   }
+
+  .hamburger {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -306,8 +341,9 @@ main {
   }
 
   .main-header {
-    
     padding: 10px 35%;
   }
+  .hamburger {
+    display: none;
+  }
 }
-

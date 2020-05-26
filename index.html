@@ -19,7 +19,8 @@
         <img class="body-header__logo body-header__logo--picture" src="wtf-mini.svg" alt="logo wtf-mini" /> co ten
         frontend</a>
     </h4>
-    <nav class="navigation">
+    <button class="hamburger hamburger--js">Menu</button>
+    <nav class="navigation navigation--js">
       <a class="navigation__link navigation__link--homepage" href="index.html"> Strona główna</a>
       <a class="navigation__link" href="o-mnie.html">O mnie</a>
       <a class="navigation__link" href="html-wiecej.html"> HTML</a>
@@ -37,7 +38,7 @@
   <main>
     <section id="top">
       <h1 class="main-header">Notatki z WTF</h1>
-      <div class="learn--js"></div>
+      <div class="learn--js "></div>
       <button class="background--js"> Nie klikaj !!! </button>
       <article>
         <h2 class="week">Tydzień 1</h2>
@@ -860,6 +861,11 @@
             dla naszego przycisku. Type określa kiedy sie wydarzenie zadzieje i mamy do wyboru: <b>click, mouseenter, mouseleave</b>
             czyli np wydarzenie wydarzy sie po kliknięciu , lub po najechaniu myszką na przycisk. Drugą opsią do wyboru jest listener
             czyli nasza funkcja, tak samo wywołujemy ją za pomocą zmiennej i zmienna podstawiamy w miejsce listener.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> element.classList.add, remove, toggle, contains ('cllas'); </b> Za pomocą classList
+            możemy dodawać, usuwać, zastępywać, lub dodawać jeżeli element ją zawiera daną klase np dla naszego przycisku.
+            Co wazne w nawiasie podajemy nazwe naszej klasy bez kropki.
           </p>
         </section>
       </article>

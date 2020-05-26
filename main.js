@@ -43,6 +43,8 @@ const comeBack = changeContent(
 
 console.log(comeBack);
 
+
+
 function f(x) {
   x = x + 2;
   console.log(x);
@@ -79,7 +81,7 @@ console.log(Planet.kick(target));
 
 console.log(console);
 
-if ((Planet.King.name == "Jacek") || (Planet.King.name == "Jace")) {
+if (Planet.King.name == "Jacek" || Planet.King.name == "Jace") {
   console.log("Zgadza się");
 } else if (Planet.King.name == "Jac") {
   console.log("Prawie zgadza sie");
@@ -98,20 +100,30 @@ switch (Planet.King.age) {
     console.log("Sam już nie wime ile mam lat");
 }
 
+
+const hamburger = document.querySelector(".hamburger--js")
+
+const open = () => {
+
+  const open1 = document.querySelector(".navigation--js");
+  open1.classList.toggle("navigation--open");
+
+}
+
+hamburger.addEventListener("click", open);
+
 const click = document.querySelector(".background--js");
 console.log(click);
 
-
-
 const action = () => {
-  
-  const action = document.querySelector('.learn--js');
-  action.innerHTML = 'I po co kliknąłeś ?';
-  
+  const action1 = document.querySelector(".body");
+  action1.classList.toggle("body--js");
+
+  const action2 = document.querySelector(".learn--js");
+  action2.innerHTML = ('i po co kliknąłeś ??? ');
+ 
 
 };
 
+click.addEventListener("click", action);
 
-
-
-click.addEventListener( 'click', action);
