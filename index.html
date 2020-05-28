@@ -741,7 +741,7 @@
 
 
           </ol>
-          
+
         </section>
         <section>
           <h3 class="week__title">Grid czyli narzędzie do tworzenia layoutu strony </h3>
@@ -794,56 +794,74 @@
         <section>
           <h3 class="week__title"> Logika w JS </h3>
           <p class="week__article">
-            <b class="special-text"> Wyrażenie logiczne "if" </b> - Wyrażenie te oddaje nam tylo 2 odpowiedzi true lub false.
-            Jeśli dostajemy true dana funkcja się wyświetli jeśli false, nie zostanie wyświetlona. Wzór tego wyrażenia to :
-           <b> if ('firstName' != 'lastName') {Wpisujemy naszą funkcje Właściwość} </b>. Kod się wyświetli bo to wyrażenie to prawda.
+            <b class="special-text"> Wyrażenie logiczne "if" </b> - Wyrażenie te oddaje nam tylo 2 odpowiedzi true lub
+            false.
+            Jeśli dostajemy true dana funkcja się wyświetli jeśli false, nie zostanie wyświetlona. Wzór tego wyrażenia
+            to :
+            <b> if ('firstName' != 'lastName') {Wpisujemy naszą funkcje Właściwość} </b>. Kod się wyświetli bo to
+            wyrażenie to prawda.
           </p>
           <p class="week__article">
-            <b class="special-text"> Operatory porównania w JS  >, <, >=, <=, ==, ===, !=, !== </b> Co ciekawe znak równości to
-            == a znak równości z uwzględnieniem typu podstawowego to === . Znak nierówności t !=.
+            <b class="special-text"> Operatory porównania w JS >, <,>=, <=,==,===, !=, !==</b> Co ciekawe znak równości
+                  to
+                  == a znak równości z uwzględnieniem typu podstawowego to === . Znak nierówności t !=.
           </p>
           <p class="week__article">
-            <b class="special-text"> Operatory warunkowe and "&&"  i or "||" not "!"</b> Operator and spawia ze oba warunki
-            muszą być spełnione , wartość or spawia że tylko 1 warunek musi być spełniony, wartość not zaprzecza wyrażeniu.
-            np:  <b> if (('firstName' != 'lastName') && ( 32 < 30)) {Wpisujemy naszą funkcje Właściwość} </b> Kod nam się nie wykona bo 
-            tylko jedne wyrażenie jest prawdą, gdybyśmy wstawili || kod by się wykonał. 
+            <b class="special-text"> Operatory warunkowe and "&&" i or "||" not "!"</b> Operator and spawia ze oba
+            warunki
+            muszą być spełnione , wartość or spawia że tylko 1 warunek musi być spełniony, wartość not zaprzecza
+            wyrażeniu.
+            np: <b> if (('firstName' != 'lastName') && ( 32 < 30)) {Wpisujemy naszą funkcje Właściwość} </b> Kod nam się
+                nie wykona bo
+                tylko jedne wyrażenie jest prawdą, gdybyśmy wstawili || kod by się wykonał.
           </p>
           <p class="week__article">
-            <b class="special-text"> Słowo kluczowe "else" oraz "else if" </b> Dzieki else możemy wykonać kod pod innymi warunkami lub gdy porównanie
-           jest fałszywe. np: <b>if (('firstName' == 'lastName')  {Wykonaj kod jeśli true} else {Wykonaj kod jeśli false} </b>
-            Dzieki else if możemy dodawać kolejne warunki do naszego wyrażenia logicznego i pierwszy który będzie prawdziwy
+            <b class="special-text"> Słowo kluczowe "else" oraz "else if" </b> Dzieki else możemy wykonać kod pod innymi
+            warunkami lub gdy porównanie
+            jest fałszywe. np: <b>if (('firstName' == 'lastName') {Wykonaj kod jeśli true} else {Wykonaj kod jeśli
+              false} </b>
+            Dzieki else if możemy dodawać kolejne warunki do naszego wyrażenia logicznego i pierwszy który będzie
+            prawdziwy
             zostanie wykonany.
           </p>
           <p class="week__article">
-            <b class="special-text"> Instrukcja "switch" </b> Podobnie jak w else if możemy podawać kolejne przypadki wyrazenia logicznego
+            <b class="special-text"> Instrukcja "switch" </b> Podobnie jak w else if możemy podawać kolejne przypadki
+            wyrazenia logicznego
             tyle że to ma bardziej ścisłe sformułowanie, używamy gdy znamy dokładne wartości. <br>
-            np: <b>switch(myNumber) {case 4: console.log('hi 4'); break; case 8: console.log('hi 8'); break; default: console.log( 'hi other');}</b>
-            I jak widzimy do instrukcji switch przypisujemy takie wyrażenia jak <em>case break default</em> 
+            np: <b>switch(myNumber) {case 4: console.log('hi 4'); break; case 8: console.log('hi 8'); break; default:
+              console.log( 'hi other');}</b>
+            I jak widzimy do instrukcji switch przypisujemy takie wyrażenia jak <em>case break default</em>
           </p>
           <p class="week__article">
             <b class="special-text"> Zapis skrócony "?" ":" </b> ? zastępuje tu if a : zastępuje else np: <br>
             <b> (zmienna1 > zmienna2) ? true : false </b>
           </p>
-          
+
         </section>
         <section>
           <h3 class="week__title">RWD (Responsive Web Design) - Media queries</h3>
           <p class="week__article">
-            <b class="special-text"> Sercem Media querien jest @media </b> Media queries jest to dostosowanie naszej strony
+            <b class="special-text"> Sercem Media querien jest @media </b> Media queries jest to dostosowanie naszej
+            strony
             do różnych typów przeglądarek, robimy to w naszych stylach za pomocą skrótu @media.
           </p>
           <ul>
             <li>Wpisujemy @media w pliku css i dalej podajemy (screen, print, all, ..) czyli urządzenie na którym bedzie
               dany styl zastosowany.
             </li>
-            <li> Dalej podajemy własności jakie ma dany styl przyjmować najpopularniejsze to <b>min-width, max-width, color itd</b>
+            <li> Dalej podajemy własności jakie ma dany styl przyjmować najpopularniejsze to <b>min-width, max-width,
+                color itd</b>
             </li>
-            <li>Możemy to wszystko łączyć za pomocą and/not/, - np @media screen and (max-width: 1024px) { podajemy selectory
+            <li>Możemy to wszystko łączyć za pomocą and/not/, - np @media screen and (max-width: 1024px) { podajemy
+              selectory
               dla których ma to być zastosowanr}
             </li>
-            <li>Każdy @media jest jakby odzielnym plikiem css i musimy wszystko podawać od początku, przyjmuje sie sie zasade
-              <b>mobile frst</b> co oznacza ze najpierw dostosowujemy strone do urzadzen mobilnych a nastepnie za pomoca @media
-              dostosowujemy ja do wiekszych rozdzielczości. Działa tu specyficzność wystarczy więc ponadpisywać tylko te które
+            <li>Każdy @media jest jakby odzielnym plikiem css i musimy wszystko podawać od początku, przyjmuje sie sie
+              zasade
+              <b>mobile frst</b> co oznacza ze najpierw dostosowujemy strone do urzadzen mobilnych a nastepnie za pomoca
+              @media
+              dostosowujemy ja do wiekszych rozdzielczości. Działa tu specyficzność wystarczy więc ponadpisywać tylko te
+              które
               chcemy zmienić aby nasz wyglą był dostosowany.
             </li>
           </ul>
@@ -851,22 +869,83 @@
         <section>
           <h3 class="week__title">Eventy , Tworzenie interakcji na stronie za pomocą JS </h3>
           <p class="week__article">
-            <b class="special-text"> Tworzymy &lt;button>  (przycisk w HTML) </b> Aby to zrobić wstawiamy standardowy tag
-            i go opisujemy treścią która ma wyświetlać sie w środku np. <button>Przykładowy przycisk</button> 
+            <b class="special-text"> Tworzymy &lt;button> (przycisk w HTML) </b> Aby to zrobić wstawiamy standardowy tag
+            i go opisujemy treścią która ma wyświetlać sie w środku np. <button>Przykładowy przycisk</button>
             Nadajemy też klase np button--js aby móc na tej klasie działać w JS.
           </p>
-           <p class="week__article">
-            <b class="special-text"> element.addEventListener('type', listener[,options]) </b> Tworzymy zmienna dla naszego
-            elementu wskazujać nasz przycisk za pomocą querySelector. Nastepnie za pomoca addEventListener tworzymy interakcje
-            dla naszego przycisku. Type określa kiedy sie wydarzenie zadzieje i mamy do wyboru: <b>click, mouseenter, mouseleave</b>
-            czyli np wydarzenie wydarzy sie po kliknięciu , lub po najechaniu myszką na przycisk. Drugą opsią do wyboru jest listener
+          <p class="week__article">
+            <b class="special-text"> element.addEventListener('type', listener[,options]) </b> Tworzymy zmienna dla
+            naszego
+            elementu wskazujać nasz przycisk za pomocą querySelector. Nastepnie za pomoca addEventListener tworzymy
+            interakcje
+            dla naszego przycisku. Type określa kiedy sie wydarzenie zadzieje i mamy do wyboru: <b>click, mouseenter,
+              mouseleave</b>
+            czyli np wydarzenie wydarzy sie po kliknięciu , lub po najechaniu myszką na przycisk. Drugą opsią do wyboru
+            jest listener
             czyli nasza funkcja, tak samo wywołujemy ją za pomocą zmiennej i zmienna podstawiamy w miejsce listener.
           </p>
           <p class="week__article">
             <b class="special-text"> element.classList.add, remove, toggle, contains ('cllas'); </b> Za pomocą classList
-            możemy dodawać, usuwać, zastępywać, lub dodawać jeżeli element ją zawiera daną klase np dla naszego przycisku.
+            możemy dodawać, usuwać, zastępywać, lub dodawać jeżeli element ją zawiera daną klase np dla naszego
+            przycisku.
             Co wazne w nawiasie podajemy nazwe naszej klasy bez kropki.
           </p>
+        </section>
+      </article>
+      <article>
+        <h2 class="week">Tydzień 7</h2>
+        <section>
+          <h3 class="week__title">Pseudoelementy "::" i pseudoklasy ":"</h3>
+          <p class="week__article">
+            <b class="special-text"> Pseudoelementy - element::befor / element::after {} </b> Są to pseudoelementy
+            dzięki którym możemy coś
+            wyróżnić, dopisać treść za pomocą CSS przed oraz po elemencie. Ale nie tylko treść można wstawić kropke Lub
+            jakiś inny element wyróżniający.Co ciekawe pseudoelement nie wpływa na treść naszego domu, nie ma go tam w
+            rzecyzwistości,
+            danego tekstu nie da sie też skopiować czy zaznaczyć.
+          </p>
+          <ul>
+            <p class="week__article">
+              <b class="special-text"> Własność content:"" </b> Dzieki tej własności możemy nasz pseudoelement uzupełnić
+              o treść.
+            </p>
+          </ul>
+
+          <p class="week__article">
+            <b class="special-text"> Pseudoklasy - selektor:hover , :visited, :focus :first-child : last-child {} </b>
+            Dzięki pseudoklasom możemy
+            nadać na nasze klasy dodatkowe własności.
+          </p>
+          <ul>
+            <p class="week__article">
+              <b class="special-text"> selektor:hover {} </b> Dzięki tej własności dana akcja wywoła się po najechaniu
+              na dany
+              element. Jest to popularna wartość wykorzystywana najszęściej w navigacji do podświetlenia najechanego
+              elementu np
+              w innym kolorze lub z innym tłem.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> selektor:visited {} </b> Dzięki tej własności dana akcja wywoła się po kliknięciu
+              w dany
+              element. Wa wartość również wykorzystywana najszęściej w navigacji do zmiany np koloru odwiedzonych już
+              stron.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> selektor:focus {} </b> Dzięki tej własności dana akcja wywoła się podczas
+              klikania tab
+              ,gdy będziemy przaskakiwać po elementach będą one naprzykład zmieniać tło. Fajne przy formulażach.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> selektor:first-child , :last-child {} </b> Dzięki tej własności dana akcja wywoła
+              się
+              tylko dla elementów które są pierwszym-dzieckiem danego rodzica, lub ostatnim.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> selektor1:not(selektor2) {} </b> Dzięki tej własności dana akcja zostanie
+              zastosowana
+              do wszystkich klas1 ktróe nie mają modyfikatora klas2.
+            </p>
+          </ul>
         </section>
       </article>
     </section>
