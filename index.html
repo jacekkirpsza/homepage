@@ -947,6 +947,129 @@
             </p>
           </ul>
         </section>
+        <section>
+          <h3 class="week__title">Node JS , npm , npx, Yarn</h3>
+          <p class="week__article">
+            <b class="special-text"> Instalacja node js </b> Jest to taki javascript uruchamiany poza przeglądark.
+            Uruchamiamy go w terminalu. Nie ma dostępu do domu. Można tu testować nasz js. Mozna tu pisać backend.
+            Pdstawowoe komendy to:
+          <ul>
+            <li><b>node -v</b> sprawdzenie wersji</li>
+            <li><b>node name.js</b> uruchamia plik i pokazuje nam wynik operacji</li>
+
+          </ul>
+          </p>
+          <p class="week__article">
+            <b class="special-text"> npm </b> jest to taki zestaw narzędzi od Node które są instalowane bezpośrednio w
+            projekcie
+            dzięki temu ludzie tworzący projekt nie muszą instalowaćtych samych narzedzi na swoich komputerach ,a mimo
+            wszystko projekt będzie jednolity.
+          <ul>
+            <li><b>npm init</b> inicjuje menagera narzedzi w projekcie, zakłada nam folder <em>package.json</em>
+              ,wpisujemy tylko raz na projekt</li>
+            <li><b>npm install (nazwa paczi) --save lub --save-dev</b> na stronie npm mamy taką wyszukiwarke paczek
+              są też tam gotowe polecenia i instrukcje co należy zrobić aby taką paczkę pobrać. opcja save słuzy do
+              paczek które będą miały wpływ na wygląd w przglądarce, a opcja save-dev to taki paczki które bea słyżyły
+              tylko do
+              pomocy dla developera. np <b>npm install --save normalize.css</b></li>
+
+            <li><b>npm install</b> Po wpisaniu tego polecenia zainstalują nam się wszystkie paczki przetrzymywane w
+              pliku package.json , który przetrzymują właśnie informacje jakie narzędzia są zastosowane w naszym
+              projekcie.
+              Stosowane jest to gdy dołączamy do projektu lub zmieniamy komputer lub nie urzywamy danego projektu i
+              usuniemy folder node-modules który jest bardzo bardzo cięzki. Instaluje nam cały folder node-modules.
+            </li>
+            <li><b>package.json</b> Otrzymujemy ten plik po zainicjowaniu npm jest tam zbiór informacji o projekcie.
+
+            </li>
+            <li><b>package-lock.json</b> Po instalacji jakieś paczki otrzymujemy właśnie ten plik ale tylko raz na
+              projekt.
+              Jest to plik który blokuje wersje , przetrzymuje aktuale dane o zainstalowanych narzędziach ich wersjii
+              itp.
+            </li>
+            <li><b>node_modules</b> Po instalacji jakieś paczki otrzymujemy właśnie ten folder ale tylko raz na
+              projekt. jest to katalog który przetrzymuje zawartość naszych zainstalowanych narzędzi przez co <em>jest
+                bardzo cięzki , nie wrzucamy go do repozytorium</em> dodajemy go do <b>.gitignore</b>
+              Co ważne jest to plik tylko do odczytu nic w nim nie edytujemy.</li>
+
+          </ul>
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Yarn </b>Alternatywą dla npm jest Yarn jest to również menadzer paczek ma ten sam
+            zasób narzędzi.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> npx </b> Jest to opcja na skorzystanie z narzęcdzi nmp bez konieczności
+            instalowania innych
+            po wpisaniu komendy np. <b>npx cowsay "Siema siema"</b> terminal tymczasowo zainstaluje nam narzędzie cowsay
+            do wykonania tylko tego polecenia. Fizycznie tego narżdzia nie będzie w projekcie.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> npm scripts </b> W pliku package.json jest taki obiekt jak scripts i właśnie w nim
+            możemy dodawać kolejne polecenia, dzięki czemu będziemy mogli coś szybciej wywołać w terminalu.
+            np. <b>"cow": "cowsay hello world"</b> lub <b>"start": "node script.js"</b> Aby wywołać nasz obiekt w
+            teminalu
+            wpisujemy <b>npm run <em>nazwa</em></b> np npm run cow.
+          </p>
+        </section>
+        <section>
+          <h3 class="week__title">SASS/SCSS</h3>
+          <p class="week__article">
+            <b class="special-text">SASS</b> Jest to preprocedor css, zamienia swoją skłaadnie na składnie rozumianą
+            przez
+            przeglądarke. SASS potrzebuje narzędzia do działania.
+          </p>
+          <p class="week__article">
+            <b class="special-text">SCSS</b> Jest to jedna ze składni SASS. SASS ma też swoją własną. Ale my się
+            będziemy uczyć SCSS. Aby z tego skorzystać tworzymy <b>plik.scss</b> i już tylko w nim edytujemy i
+            dopisujemy nasze style. <b>plik.css</b> stworzy się samoisnie i przekształci na prawidłowy plik .css
+            który będzie mogła odczytać przeglądarka. Nie edytuejmy w nim.
+          <ul>
+            <li><b>Zmienne "$"</b> Z tym znakiem Możemy stworzyć zmienna np <b>$myColor: #ccc; </b> dzięki temu w
+              kolejnych selektorach
+              zamiast koloru wpisujemy <b>$myColr</b> proste.
+            </li>
+            <li><b>@mixin @include</b> Tworzymy sobie selektor @mixin wpisujemy jakieś wartości jak w zwykłym elemencie
+              i poźniej zamiast przpisywać wszystkie wartości po kolei możemy użyć opcji @include w następnym elemencie,
+              i utomatycznie podstwai nam te wartości.
+            </li>
+            <li> Za pomocą @mixin @include możemy także tworzyć funkcje np: <b>@mixin myParamiters($radius, backgraund)
+                {border-radius: $radius; backgraund: $backgraund;} </b> i teraz wystarczy ze w danym elemencie
+              wpiszemy @include myParamiters(20px, red); i otrzymamy nasze parametry.</li>
+            <li><b>@extend</b> Za pomocą tej opcji dodajemy cały selektor działa podobnie jak mixin np <b>
+                @extend .main;
+              </b></li>
+            <li><b>" & " parent selektor</b> Swietna opcja do skrócenia zapisu css gdy używamy BEM i zagnieżdżeni.
+              podajemy tylko selektro rodzica np <b>.main {</b> i w nim wpisujemy własności aby przejść do zagnieżdżenia
+              podajemy jak
+              zwykłą własnoś np <b>&__title {</b> i teraz tu wpisujemy kolejne własności , możemy podać też dalej
+              modyfikatora
+              np <b>&--special {</b> i wpsiuejmy jego własności. Również możemy podawać <b>@media</b> ważne aby w dobrym
+              zagnieżdzeniu. A więc nasz <b>"&"</b> sam dopisuje wszystko co zanjduje sie nad nim jeśli chodzi o BEM.
+            </li>
+          </ul>
+          </p>
+        </section>
+        <section>
+          <h3 class="week__title">node-sass</h3>
+          <p class="week__article">
+            <b class="special-text">node-sass</b> Jest to narzędzie od npm które inicjuje sass w naszym projekcie.
+          </p>
+          <p class="week__article">
+            <b class="special-text">npx node-sass style.scss style.css</b> Jest to opcja która zamienia nasz plik style.scss na style.css,
+            Wiec musimy wprowadzać tą komende w terminalu aby nadpisywać i aktualizować nasz plik.css. A więc wszystkie zmiany nowe
+            style piszemy <b>tylko w plik.scss</b> i on nam się przekształci w plik.css. Nie możemy robić na odwrót bo stracimy nasze 
+            style po nadpisaniu pliku .css
+          </p>
+          <p class="week__article">
+            <b class="special-text">npx node-sass -w style.scss style.css</b> Jest to opcja właczana w terminalu tymczasowo 
+            która spowoduje, że plik.scss będzie nam się przekształcał automatycznie w plik.css. Gdy wyjdziemy z tej opcji 
+            w terminalu te automatyczne nadpisywanie przestanie działać. Co ciekawe gdy mamy włączonątą opcje w terminalu 
+            będziemy również otrzymywać informacje o błedach jeśli jakiś popełnimy przy wpisywaniu styli.
+            <b class="special-text">ctrl c</b> tym właśnie skrótem klawiszowym w terminalu cofamy, a w przypadku naszej 
+            opcji opuszczamy ją. Aby nie wpisywać całego polecenia w terminalu za każdym razem warto <b>strworzyc script</b>
+            w o nazwie np sass w pliku package.json.
+          </p>
       </article>
     </section>
   </main>
