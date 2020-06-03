@@ -7,6 +7,12 @@ html {
   box-sizing: inherit;
 }
 
+@import "modules/footer.scss";
+
+.background--js {
+  background: pink;
+}
+
 .body {
   background: #ecfee8;
   background: linear-gradient(
@@ -22,40 +28,44 @@ html {
     rgba(155, 233, 204, 0.6951155462184874) 74%,
     rgba(193, 236, 220, 0.8491771708683473) 89%
   );
-
   margin: 16px auto;
+  &--js {
+    background: rgb(240, 228, 230);
+  }
 }
 
-.body--js {
-  background: rgb(240, 228, 230);
+.body-header {
+  display: grid;
+  grid-template-areas: "h4 h4" "nav nav";
+  grid-template-columns: 1fr 1fr;
+  &__logo {
+    color: #21069c;
+    margin: 16px auto;
+    grid-area: h4;
+    grid-column: 2 / span 2;
+    &--picture {
+      background: black;
+      width: fit-content;
+      margin: 0;
+    }
+  }
 }
 
 .hamburger {
   display: none;
 }
 
-.footer {
-  background-color: #fcf6b1;
-  border-radius: 32px;
+.learn--js {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
 }
-.footer__name {
-  color: tomato;
-  background: turquoise;
+
+main {
   width: 1000px;
-  padding: 1px 400px;
-  margin: 1px auto;
-  box-sizing: border-box;
+  margin: 16px auto;
 }
-.footer__link {
-  width: 1000px;
-  padding-left: 385px;
-  margin: 16px auto 1px;
-  box-sizing: border-box;
-  display: block;
-}
-.footer__logo {
-  padding-left: 450px;
-}
+
 #mojezdjecie {
   width: 220px;
   height: 300px;
@@ -67,42 +77,6 @@ html {
   box-sizing: border-box;
 }
 
-#zasadaWaznosci {
-  max-height: 3cm;
-}
-
-.week {
-  color: #796011;
-  background-color: #c4cc4e;
-  padding-left: 435px;
-}
-.week__title {
-  color: #748b75;
-  background: #ccffcb;
-}
-.week__article {
-  margin: 6px;
-  width: 1000px;
-  
-}
-
-.week__article::before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: rgb(38, 20, 202);
-  border-radius: 50%;
-}
-
-
-.week__article::after {
-  content: "//";
-  font-weight: bold;
-  color:  rgb(38, 20, 202);
- 
-}
-
 .main-header {
   color: #331832;
   background: #e1b07e;
@@ -110,36 +84,14 @@ html {
   border: 4px double #16e4eb;
   border-radius: 32px;
   padding: 16px 25vw;
+  &::before {
+    content: "= ";
+  }
+  &::after {
+    content: " = ";
+  }
 }
 
-.main-header::before {
-  content: "= " ;
-}
-
-.main-header::after {
-  content: " = " ;
-}
-
-.body-header {
-  display: grid;
-  grid-template-areas: "h4 h4" "nav nav";
-  grid-template-columns: 1fr 1fr;
-}
-.body-header__logo {
-  color: #21069c;
-  margin: 16px auto;
-  grid-area: h4;
-  grid-column: 2 / span 2;
-}
-.body-header__logo--picture {
-  background: black;
-  width: fit-content;
-  margin: 0;
-}
-main {
-  width: 1000px;
-  margin: 16px auto;
-}
 .navigation {
   display: flex;
   flex-flow: row wrap;
@@ -147,52 +99,15 @@ main {
   grid-area: nav;
   grid-column: 1/3;
   align-items: center;
-}
-
-.navigation__link:hover {
-  background: yellow;
-}
-
-.navigation__link:visited {
-  color: rgb(23, 67, 228);
-}
-
-
-.navigation__link {
-}
-
-.navigation__link--homepage {
-  background: #a9edee;
-}
-.special-text {
-  margin: 2px 6px 2px 0;
-  padding-left: 6px;
-  text-decoration: underline;
-}
-
-.learn--js {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.table {
-  width: 100%;
-  border: 2px solid gray;
-  text-align: center;
-}
-
-.table__row {
-  background: yellowgreen;
-}
-
-.table__body {
-  color: #e9393f;
-  background: rgb(184, 231, 91);
-}
-
-.space {
-  height: 300px;
+  &__link--homepage {
+    background: #a9edee;
+  }
+  &__link:hover {
+    background: yellow;
+  }
+  &__link:visited {
+    color: rgb(23, 67, 228);
+  }
 }
 
 .roadmap {
@@ -201,187 +116,58 @@ main {
   justify-content: center;
 }
 
-.background--js {
-  background: pink;
+.special-text {
+  margin: 2px 6px 2px 0;
+  padding-left: 6px;
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 425px) {
-  .footer__name {
-    width: 350px;
-    padding: 0 20px;
-    margin: 0px auto;
-    box-sizing: border-box;
-  }
+.space {
+  height: 300px;
+}
 
-  .footer__link {
-    width: 350px;
-    padding-left: 50%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: block;
+.table {
+  width: 100%;
+  border: 2px solid gray;
+  text-align: center;
+  &__row {
+    background: yellowgreen;
   }
-  .footer__logo {
-    padding-left: 0;
-  }
-
-  #zasadaWaznosci {
-    max-height: 100%;
-    width: 350px;
-  }
-
-  .week {
-    padding-left: 0;
-  }
-
-  .week__article {
-    margin: 0;
-    width: 350px;
-    
-  }
-
-  .main-header {
-    color: #331832;
-    background: #e1b07e;
-    height: 100%;
-    border: 4px double #16e4eb;
-    border-radius: 32px;
-    padding: 30px;
-    width: 350px;
-    box-sizing: border-box;
-  }
-
-  
-
-  .body-header {
-    display: block;
-    width: 350px;
-    margin: 0 auto;
-    
-  }
-  .body-header__logo {
-    color: #21069c;
-    margin: 16px;
-    font-size: x-small;
-  }
-  .body-header__logo--picture {
-    background: black;
-    width: fit-content;
-    margin: 0;
-  }
-  main {
-    width: 350px;
-    margin: 64px auto;
-  }
-
-  .hamburger {
-    display: inline;
-    position: absolute;
-    top: 64px;
-    right: 16px;
-  }
-
-  .navigation {
-    display: none;
-  }
-
-  .navigation--open {
-    padding: 16px;
-    display: block;
-  }
-
-  .navigation__link {
-    display: block;
-    padding: 2px;
-  }
-  .navigation__link--homepage {
-    background: none;
+  &__body {
+    color: #e9393f;
+    background: rgb(184, 231, 91);
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .footer__name {
-    width: 700px;
-    padding: 0 20px;
-    margin: 0px auto;
-    box-sizing: border-box;
+.week {
+  color: #796011;
+  background-color: #c4cc4e;
+  padding-left: 435px;
+  &__title {
+    color: #748b75;
+    background: #ccffcb;
   }
-
-  .footer__link {
-    width: 700px;
-    padding-left: 50%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: block;
+  &__article {
+    margin: 6px;
+    width: 1000px;
   }
-  .footer__logo {
-    padding-left: 0;
+  &__article::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: rgb(38, 20, 202);
+    border-radius: 50%;
   }
-
-  #zasadaWaznosci {
-    width: 700px;
-  }
-
-  .week {
-    padding-left: 0;
-  }
-
-  .week__article {
-    margin: 0;
-    width: 700px;
-    
-  }
-
-  .main-header {
-    color: #331832;
-    background: #e1b07e;
-    height: 100%;
-    border: 4px double #16e4eb;
-    border-radius: 32px;
-    padding: 30px;
-    width: 700px;
-    box-sizing: border-box;
-  }
-
-  .body-header {
-    display: block;
-    width: 700px;
-    margin: 0 auto;
-  }
-  .body-header__logo {
-    color: #21069c;
-    margin: 16px;
-    font-size: x-small;
-  }
-  .body-header__logo--picture {
-    background: black;
-    width: fit-content;
-    margin: 0;
-  }
-  main {
-    width: 700px;
-    margin: 0 auto;
-  }
-
-  .hamburger {
-    display: none;
+  &__article::after {
+    content: "//";
+    font-weight: bold;
+    color: rgb(38, 20, 202);
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .body-header {
-    width: auto;
-    margin: 0 200px;
-  }
-
-  main {
-    width: auto;
-    margin: 16px 200px;
-  }
-
-  .main-header {
-    padding: 10px 35%;
-  }
-  .hamburger {
-    display: none;
-  }
+#zasadaWaznosci {
+  max-height: 3cm;
 }
+
+@import "modules/media.scss";

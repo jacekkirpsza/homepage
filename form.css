@@ -1,18 +1,16 @@
 body {
-    background: purple;
-    color: wheat;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: purple;
+  color: wheat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
-
-
 }
 
 .form__input {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }

@@ -1,0 +1,22 @@
+.footer {
+    background-color: #fcf6b1;
+    border-radius: 32px;
+    &__name {
+      color: tomato;
+      background: turquoise;
+      width: 1000px;
+      padding: 1px 400px;
+      margin: 1px auto;
+      box-sizing: border-box;
+    }
+    &__link {
+      width: 1000px;
+      padding-left: 385px;
+      margin: 16px auto 1px;
+      box-sizing: border-box;
+      display: block;
+    }
+    &__logo {
+      padding-left: 450px;
+    }
+  }

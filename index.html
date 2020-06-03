@@ -462,6 +462,7 @@
             każdefo parametru
             zwraca określoną wartość. Funkcja posiada wzór : <br>
             <em> function calculate(myNumber) {return myNumber*7;}</em> gdzie:
+          </p>
           <ul>
             <li>Function - Jest to deklaracja, wskazanie na funkcje</li>
             <li>calculate - Nazwa funkcji, nasz opis co robimy,</li>
@@ -470,15 +471,15 @@
             <li>myNumber*7;- wynik, opisujemy co nasz parametr ma zrobić</li>
             <li>Aby wykonać funcje musimy podać wartości naszych parametrów np calculate(7) i otrzymamy wynik 49.</li>
           </ul>
-
-          <b class="special-text">FAT arrow =></b> - Funkcje możemy zapisać również w inny sposób a mianowicie za
-          pomocą: <br>
-          Daje to nam ten sam efkt, jest to zapis skrócony. np. <em>const calculate = (myNumber) => {return
-            myNumber*7;}</em>
+          <p>
+            <b class="special-text">FAT arrow =></b> - Funkcje możemy zapisać również w inny sposób a mianowicie za
+            pomocą: <br>
+            Daje to nam ten sam efkt, jest to zapis skrócony. np. <em>const calculate = (myNumber) => {return
+              myNumber*7;}</em>
 
           </p>
           <p class="week__article">
-            <b class="special-text">Obiekty</b> - sa to zmienna ktróra tworzy jedna calość dla swoich własności. <br>
+            <b class="special-text">Obiekty</b> - sa to zmienna ktróra tworzy jedna calość dla swoich własności.
             zapisujemy to : <em>const = ObjectName { Własności } </em> <br>
             <b>Własności</b> też mają swój schemat zapisu: <b>Name: value,</b> czyli nazwa : wartość i , i wpisujemy
             następną własność.
@@ -495,6 +496,7 @@
           <h3 class="week__title">Bugi - Błędy</h3>
           <p class="week__article">
             <b class="special-text">Gdzie szukać pomocy?</b>
+          </p>
           <ul>
             <li>Sprawdzić czy zapisaliśmy plik i odświeżyliśmy strone, czasem należy skasować ciasteczka</li>
             <li>Czytać błędy wyświetlane przed edytor, validator lub console</li>
@@ -505,72 +507,79 @@
               devdocs.io, caniuse.com, css-tricks.com, w3.org. </li>
             <li>Grupy na fb: Front-end: Pierwsza praca, Programowanie-wsparcie na starcie, Programuj dziewczyno.</li>
           </ul>
-          </p>
+
         </section>
         <section>
           <h3 class="week__title">HTML - Listy, Tabele, Definicje</h3>
           <p class="week__article">
             <b class="special-text">Nowe znaczniki</b>
+          </p>
           <ul>
             <li>&lt;ul> - unordered list , nieuporzadkowana lista</li>
             <li>&lt;li> - list item , element listy</li>
             <li>&lt;ol> ordered list, uporzadkowana lista</li>
-            <ol>
-              <li>W liście uporzadkowanej dostajemy liczy zamiat kropek</li>
-              <li>Ale mozemy to edytowac w css za pomoca własości <b>list-style (-type)</b></li>
-            </ol>
-            <li>&lt;dl> - description list, jest to lista do opisywania definicji</li>
-            <dl>
-              <dt> &lt;dt> - description term , jest to tytuł definicji</dt>
-              <dd>&lt;dd> - description details, jest to opis definicji</dd>
-              <dd>Jak widzimy tytuł definicji dostaje automatycznie marginesy a opis nie ma zadnych wyróznien
-                poza dodatkowymi wcięciami.
-              </dd>
-            </dl>
-            <li>&lt;table> - czyli tabela składa się ona z wewnętrznych znacznikó:</li>
-            <table class="table">
-              <thead>
-                <caption>
-                  Ważne ! - Tabel nie używamy do budowania layout ów.
-                </caption>
-                <tr class="table__row">
-                  <th>Nazwa znacznika</th>
-                  <th>Opis znacznika</th>
-                </tr>
-
-              </thead>
-              <tbody class="table__body">
-                <tr>
-                  <td>&lt;tr></td>
-                  <td>table row, wiersz tabeli</td>
-                </tr>
-                <tr>
-                  <td>&lt;td></td>
-                  <td>table data (cell) , komórka tabeli, czyli teks</td>
-                </tr>
-                <tr>
-                  <td>&lt;thead></td>
-                  <td>Nagłówek tabeli</td>
-                </tr>
-                <tr>
-                  <td>&lt;th></td>
-                  <td>table header, komórka w nagłówku tabeli</td>
-                </tr>
-                <tr>
-                  <td>&lt;tbody</td>
-                  <td>ciało tabelii</td>
-                </tr>
-                <tr>
-                  <td>&lt;caption></td>
-                  <td>opis tabel</td>
-                </tr>
-              </tbody>
-
-            </table>
-
-
           </ul>
-          </p>
+          <ol>
+            <li>W liście uporzadkowanej dostajemy liczy zamiat kropek</li>
+            <li>Ale mozemy to edytowac w css za pomoca własości <b>list-style (-type)</b></li>
+          </ol>
+          <ul>
+            <li>&lt;dl> - description list, jest to lista do opisywania definicji</li>
+          </ul>
+          <dl>
+            <dt> &lt;dt> - description term , jest to tytuł definicji</dt>
+            <dd>&lt;dd> - description details, jest to opis definicji</dd>
+            <dd>Jak widzimy tytuł definicji dostaje automatycznie marginesy a opis nie ma zadnych wyróznien
+              poza dodatkowymi wcięciami.
+            </dd>
+          </dl>
+          <ul>
+            <li>&lt;table> - czyli tabela składa się ona z wewnętrznych znacznikó:</li>
+          </ul>
+
+          
+          <table class="table">
+            <caption>
+              Ważne ! - Tabel nie używamy do budowania layout ów.
+            </caption>
+            <thead>
+              <tr class="table__row">
+                <th>Nazwa znacznika</th>
+                <th>Opis znacznika</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr>
+                <td>&lt;tr></td>
+                <td>table row, wiersz tabeli</td>
+              </tr>
+              <tr>
+                <td>&lt;td></td>
+                <td>table data (cell) , komórka tabeli, czyli teks</td>
+              </tr>
+              <tr>
+                <td>&lt;thead></td>
+                <td>Nagłówek tabeli</td>
+              </tr>
+              <tr>
+                <td>&lt;th></td>
+                <td>table header, komórka w nagłówku tabeli</td>
+              </tr>
+              <tr>
+                <td>&lt;tbody</td>
+                <td>ciało tabelii</td>
+              </tr>
+              <tr>
+                <td>&lt;caption></td>
+                <td>opis tabel</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+
+
+
         </section>
         <section>
           <h3 class="week__title">Normalizacja vs reset</h3>
@@ -593,6 +602,7 @@
             <b class="special-text">Wlasnoś display: flex; </b> - wplywa na rozłozenie elementów wzgledem siebie,
             wlasność ta pracuje w osi poziomej i pionowej
             mozna wiec to rozłożenie zmieniać za pomocą innych selektorów:
+          </p>
           <ul>
             <li>flex-direction: row;, column;, row-reverse;, column-reverse;; (domyślna wartość to row) <br>
               selektor ten pokazuje od którego kierunku będzie zaczynał ustawiać nam elementy.</li>
@@ -640,12 +650,13 @@
             <li>flex: skrót pisujacy 3 wlasności: flex-grow flex-shrink flex flex-basis
             </li>
           </ul>
-          </p>
+
         </section>
         <section>
           <h3 class="week__title">Tła - Background :D </h3>
           <p class="week__article">
             <b class="special-text">Własności: </b>
+          </p>
           <ul>
             <li>background-image: url('ścieżka do pliku'); Aby w VCS wejść do innego katalogu podajemy ścieżkę
               ('../images/name.jpg')
@@ -678,7 +689,7 @@
           stworzenie takiego gradientu i skopiowanie gotowych wartości kodu:
           <a href="https://cssgradient.io/gradient-backgrounds/"> griadient-backrounds</a>
 
-          </p>
+
         </section>
         <section>
           <h3 class="week__title">Figma - Program graficzny </h3>
@@ -802,18 +813,20 @@
             wyrażenie to prawda.
           </p>
           <p class="week__article">
-            <b class="special-text"> Operatory porównania w JS >, <,>=, <=,==,===, !=, !==</b> Co ciekawe znak równości
-                  to
-                  == a znak równości z uwzględnieniem typu podstawowego to === . Znak nierówności t !=.
+            <b class="special-text"> Operatory porównania w JS >, &lt;,>=, &lt;=,==,===, !=, !==</b> Co ciekawe znak
+            równości
+            to
+            == a znak równości z uwzględnieniem typu podstawowego to === . Znak nierówności t !=.
           </p>
           <p class="week__article">
             <b class="special-text"> Operatory warunkowe and "&&" i or "||" not "!"</b> Operator and spawia ze oba
             warunki
             muszą być spełnione , wartość or spawia że tylko 1 warunek musi być spełniony, wartość not zaprzecza
             wyrażeniu.
-            np: <b> if (('firstName' != 'lastName') && ( 32 < 30)) {Wpisujemy naszą funkcje Właściwość} </b> Kod nam się
-                nie wykona bo
-                tylko jedne wyrażenie jest prawdą, gdybyśmy wstawili || kod by się wykonał.
+            np: <b> if (('firstName' != 'lastName') && ( 32 &lt; 30)) {Wpisujemy naszą funkcje Właściwość} </b> Kod nam
+            się
+            nie wykona bo
+            tylko jedne wyrażenie jest prawdą, gdybyśmy wstawili || kod by się wykonał.
           </p>
           <p class="week__article">
             <b class="special-text"> Słowo kluczowe "else" oraz "else if" </b> Dzieki else możemy wykonać kod pod innymi
@@ -905,10 +918,10 @@
             danego tekstu nie da sie też skopiować czy zaznaczyć.
           </p>
           <ul>
-            <p class="week__article">
+            <li>
               <b class="special-text"> Własność content:"" </b> Dzieki tej własności możemy nasz pseudoelement uzupełnić
               o treść.
-            </p>
+            </li>
           </ul>
 
           <p class="week__article">
@@ -917,34 +930,34 @@
             nadać na nasze klasy dodatkowe własności.
           </p>
           <ul>
-            <p class="week__article">
+            <li>
               <b class="special-text"> selektor:hover {} </b> Dzięki tej własności dana akcja wywoła się po najechaniu
               na dany
               element. Jest to popularna wartość wykorzystywana najszęściej w navigacji do podświetlenia najechanego
               elementu np
               w innym kolorze lub z innym tłem.
-            </p>
-            <p class="week__article">
+            </li>
+            <li>
               <b class="special-text"> selektor:visited {} </b> Dzięki tej własności dana akcja wywoła się po kliknięciu
               w dany
               element. Wa wartość również wykorzystywana najszęściej w navigacji do zmiany np koloru odwiedzonych już
               stron.
-            </p>
-            <p class="week__article">
+            </li>
+            <li>
               <b class="special-text"> selektor:focus {} </b> Dzięki tej własności dana akcja wywoła się podczas
               klikania tab
               ,gdy będziemy przaskakiwać po elementach będą one naprzykład zmieniać tło. Fajne przy formulażach.
-            </p>
-            <p class="week__article">
+            </li>
+            <li>
               <b class="special-text"> selektor:first-child , :last-child {} </b> Dzięki tej własności dana akcja wywoła
               się
               tylko dla elementów które są pierwszym-dzieckiem danego rodzica, lub ostatnim.
-            </p>
-            <p class="week__article">
+
+            <li>
               <b class="special-text"> selektor1:not(selektor2) {} </b> Dzięki tej własności dana akcja zostanie
               zastosowana
               do wszystkich klas1 ktróe nie mają modyfikatora klas2.
-            </p>
+            </li>
           </ul>
         </section>
         <section>
@@ -953,17 +966,19 @@
             <b class="special-text"> Instalacja node js </b> Jest to taki javascript uruchamiany poza przeglądark.
             Uruchamiamy go w terminalu. Nie ma dostępu do domu. Można tu testować nasz js. Mozna tu pisać backend.
             Pdstawowoe komendy to:
+          </p>
           <ul>
             <li><b>node -v</b> sprawdzenie wersji</li>
             <li><b>node name.js</b> uruchamia plik i pokazuje nam wynik operacji</li>
 
           </ul>
-          </p>
+
           <p class="week__article">
             <b class="special-text"> npm </b> jest to taki zestaw narzędzi od Node które są instalowane bezpośrednio w
             projekcie
             dzięki temu ludzie tworzący projekt nie muszą instalowaćtych samych narzedzi na swoich komputerach ,a mimo
             wszystko projekt będzie jednolity.
+          </p>
           <ul>
             <li><b>npm init</b> inicjuje menagera narzedzi w projekcie, zakłada nam folder <em>package.json</em>
               ,wpisujemy tylko raz na projekt</li>
@@ -993,7 +1008,7 @@
               Co ważne jest to plik tylko do odczytu nic w nim nie edytujemy.</li>
 
           </ul>
-          </p>
+
           <p class="week__article">
             <b class="special-text"> Yarn </b>Alternatywą dla npm jest Yarn jest to również menadzer paczek ma ten sam
             zasób narzędzi.
@@ -1024,6 +1039,7 @@
             będziemy uczyć SCSS. Aby z tego skorzystać tworzymy <b>plik.scss</b> i już tylko w nim edytujemy i
             dopisujemy nasze style. <b>plik.css</b> stworzy się samoisnie i przekształci na prawidłowy plik .css
             który będzie mogła odczytać przeglądarka. Nie edytuejmy w nim.
+          </p>
           <ul>
             <li><b>Zmienne "$"</b> Z tym znakiem Możemy stworzyć zmienna np <b>$myColor: #ccc; </b> dzięki temu w
               kolejnych selektorach
@@ -1048,7 +1064,7 @@
               zagnieżdzeniu. A więc nasz <b>"&"</b> sam dopisuje wszystko co zanjduje sie nad nim jeśli chodzi o BEM.
             </li>
           </ul>
-          </p>
+
         </section>
         <section>
           <h3 class="week__title">node-sass</h3>
@@ -1056,20 +1072,78 @@
             <b class="special-text">node-sass</b> Jest to narzędzie od npm które inicjuje sass w naszym projekcie.
           </p>
           <p class="week__article">
-            <b class="special-text">npx node-sass style.scss style.css</b> Jest to opcja która zamienia nasz plik style.scss na style.css,
-            Wiec musimy wprowadzać tą komende w terminalu aby nadpisywać i aktualizować nasz plik.css. A więc wszystkie zmiany nowe
-            style piszemy <b>tylko w plik.scss</b> i on nam się przekształci w plik.css. Nie możemy robić na odwrót bo stracimy nasze 
+            <b class="special-text">npx node-sass style.scss style.css</b> Jest to opcja która zamienia nasz plik
+            style.scss na style.css,
+            Wiec musimy wprowadzać tą komende w terminalu aby nadpisywać i aktualizować nasz plik.css. A więc wszystkie
+            zmiany nowe
+            style piszemy <b>tylko w plik.scss</b> i on nam się przekształci w plik.css. Nie możemy robić na odwrót bo
+            stracimy nasze
             style po nadpisaniu pliku .css
           </p>
           <p class="week__article">
-            <b class="special-text">npx node-sass -w style.scss style.css</b> Jest to opcja właczana w terminalu tymczasowo 
-            która spowoduje, że plik.scss będzie nam się przekształcał automatycznie w plik.css. Gdy wyjdziemy z tej opcji 
-            w terminalu te automatyczne nadpisywanie przestanie działać. Co ciekawe gdy mamy włączonątą opcje w terminalu 
+            <b class="special-text">npx node-sass -w style.scss style.css</b> Jest to opcja właczana w terminalu
+            tymczasowo
+            która spowoduje, że plik.scss będzie nam się przekształcał automatycznie w plik.css. Gdy wyjdziemy z tej
+            opcji
+            w terminalu te automatyczne nadpisywanie przestanie działać. Co ciekawe gdy mamy włączonątą opcje w
+            terminalu
             będziemy również otrzymywać informacje o błedach jeśli jakiś popełnimy przy wpisywaniu styli.
-            <b class="special-text">ctrl c</b> tym właśnie skrótem klawiszowym w terminalu cofamy, a w przypadku naszej 
-            opcji opuszczamy ją. Aby nie wpisywać całego polecenia w terminalu za każdym razem warto <b>strworzyc script</b>
+            <b class="special-text">ctrl c</b> tym właśnie skrótem klawiszowym w terminalu cofamy, a w przypadku naszej
+            opcji opuszczamy ją. Aby nie wpisywać całego polecenia w terminalu za każdym razem warto <b>strworzyc
+              script</b>
             w o nazwie np sass w pliku package.json.
           </p>
+        </section>
+      </article>
+      <article>
+        <h2 class="week">Tydzień 8</h2>
+        <section>
+          <h3 class="week__title">Import Export , Rozbijanie na moduły</h3>
+          <p class="week__article">
+            <b class="special-text"> Import w css , scss [ @import "źródło" ]</b> Jeśli kod nam się rozrasta możemy rozbijać go na
+            mniejsze partie umieszczając je w poszczególnych plikach, są to tak zawane moduły. Później nasze moduły 
+            możemy importować do pliku głównego.scss. Tak samo możemy importować style zewnętrzne np. normalize którego
+            źródłem będzie zewnętrzy link, przez co nasz projekt ma coraz mniej zbędnych plików.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Eksport w css , scss </b> Nie jest to używane, bo eksport naszych styli
+            następuje automatycznie. Dzieki czemu są wyświetlane na stronie.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Moduły w JS </b> Aby korzystać z modułów w Js do naszego znacznika musimy dopisać 
+            atrybut type o wartości modules <b>script type="module"></b>
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Eksport w JS </b> eksport w JS jest prosty. Rozbijamy kod na mnijsze moduły np 
+            poszczególne funkcje i jedną z nich zapisujemy w odzielnym pliku.js. Aby eksportować dopisujemy jedynie Słowo
+            eksport przed daną funkcją i tyle. np <b>eksport const hello = (name) => { return `Cześć ${name}`;}</b>
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Import nazwany w JS </b> Jest to import po konkretnych nazwach. Aby zaimportować nasz wzór funkcji wpisujemy w pliku główny .js
+            <b>import {hello} from 'źródło';</b> i teraz wystarcy ją wywołać np <b>console.log(hello('Jacek'));</b> Teraz 
+            dany moduł możemy zaimportować w różnych miejscach kodu a więc przydaje się to przy powtarzalnych funkcjach.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Import domyślny w JS "export default" </b> Przydadna w gdy naszym modułem jest np cały obiekt.
+            Przy eksporcie wpisujemy <b>export default name</b> <em> ale już pod obiektem a nie jak to było wyżej  bezpośrednio przed </em>
+            Różnica w imporcie polega na tym że nie musimy podać dokładnej nazwy.
+            Możemy podać dowolną a mimo wszystko nam zaimportuje prawidłowo. W tym przypadku nazwę wpisyjemy
+            bez nawiasów np. <b>import elo from 'źródło';</b> i teraz wystarcy ją wywołać np <b>console.log(hello(elo));</b>
+            Przydatne jest to gdy mamy już obiekty, funkcje o tych samych nazwach w różnych modułach i chcemy je 
+            zaimportowaćdo jednego pliku głównego.js
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Zmiana nazwy przy funkcjach nazwanych w JS "as" </b> Zdaża się że mamy konflikt z nazwami
+            a nie zastosowaliśmy exportu defoult lub po prostu nasza nazwa jest bardzo długa możemy ją zmienić za pomocą 
+            polecenia "as" czyli po prostu zamieniamy jedną nazwe na drugą bezpośrednio w linijce inicjującej import 
+             i tą drugą wywołujemy np. <b>import {itIsMLongySureName as name} from 'źródło';</b>
+          </p>
+          <p class="week__article">
+            <b class="special-text"> Import * as name from 'źródło'; </b> Dzieki tej opcji importuje wszystko na raz
+            w przypadku gdy mamy więcej instrukcji w naszym obiekcie. Działa to tak że tworzy nam sie obiekt o nazwie name
+            i teraz aby wywołać takie funkcje czy obiekty podajmy name.hello jak w przypadku obiektów.
+          </p>
+        </section>
       </article>
     </section>
   </main>
