@@ -1144,7 +1144,85 @@
             i teraz aby wywołać takie funkcje czy obiekty podajmy name.hello jak w przypadku obiektów.
           </p>
         </section>
-      </article>
+        <section>
+          <h3 class="week__title">Webpack</h3>
+          <p class="week__article">
+            <b class="special-text"> Webpack</b> Jest na chwilę obecną podstawowym narzędziem frontendowca, automatyzuje on procesy
+            wystarczy że mamy stworzoby plik konfiguracyjny i o więcej już nic nam nie jest potrzebne wszystko dzieje się samo :D . 
+            Webpack sam importuje nam moduły i łączy je w jednym pliku, sam uaktywnia narzędzia, zamienia style z scss na css, wystąpuje on teraz 
+            w każdym frameworku i w każdej bibliotece. Jest to narzędzie typowo developesrskie. Nie musimy poki co umeć napisać 
+            pliku konfiguracyjnego , musimy umieć go uruchomić i urzywać. Webpacka instalujemy normalnie przez npm.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> ./src/index.js</b> Jest to domyślny plik wsadowy dla webpacka więc musimy go strowrzyć
+            w swoim projekcie. Po wywołaniu funkji npx webpack storzy nam się nowy katalog dist a w nim plik main.js
+          </p>
+          <p class="week__article">
+            <b class="special-text"> ./dist/main.js</b> Jest to główny plik wsadowy dla przeglądarki, tworzy się sam po zainisjowaniu
+             webpacka. To właśnie tam dzieje się cała magia. Zawartość jego może być niezrozumiła z tego w zględu, ,że webpack 
+             sam dokleja kod aby wszystko spojnie działało. Ale jest czytelne dla przeglądarki. Tego pliku nie edytujemy.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> moment</b> Jest to narzędzie z npm pokazujące godzne, ale po zaistalowaniu jego widać jakie 
+            zalety daje nam webpack. Jedyne co musimy zrobić aby skorzystać z tego narzedzia to zrobić <b> import moment from "moment"</b> 
+            I następnie wywołać naszą funkcje. Webpack sam odnajdzie biblioteke doda ją do html i da eksport w odpowiednim miejscu. 
+          </p>
+          <p class="week__article">
+            <b class="special-text"> loader</b> Jest to opcja pozwalająca na dodawanie do webpacka i poddawanie ich jego magii innych
+             plików nie tylko .js , w loader możemy ustawić pliki html, czy obrazki .jpg. Loader znajduje sie w pliku konfiguracyjnym.
+          </p>
+          <p class="week__article">
+            <b class="special-text"> plugin</b> Pozwala na wykonywanie różnych operacji bez wczytywania plików.
+            Pozwalają na tworzenie podstron i dodawanie im komkretnych plików ze stylami. PLugin również znajduje sie i ustwia go 
+            w pliku konfiguracyjnym. 
+          </p>
+          <p class="week__article">
+            <b class="special-text"> mode (development, production)</b> Dotyczy trybu pracy, trzeba je rozgraniczać przy
+            odświeżaniu webpacka, oba tryby dadza nam inne wyniki. Tryb developerski w plikach z katalogu dist pokaze nam nasze 
+            zmiany i uaktualnienia naszej pracy.Będzie wyglądał w miare czytelnie. Tryb production zmieni katalog dist i 
+            pliki w nim zawarte na skompresowane i czytelne dla przeglądarki czyli mało czytelne dla nas. Będzie tez wyrzucał nam 
+            wiecej błędów i ostrzeżeń. np ze plik jest ciezki i ze moze go wywalic :D.
+            uruchamiamy je : <b>npx webpack --mode development</b> i <b>npx webpack --mode production</b>
+          </p> 
+        </section>
+        <section>
+          <h3 class="week__title">WTF Webpack starter kit</h3>
+          <p class="week__article">
+            <b class="special-text"> co to ?</b>  Jest to podstawowy plik konfiguracyjny który możemy pobrać i korzystać z niego 
+            w naszej dalszej nauce a nawet pracy. plik ten zawiera w sobie:
+          </p>
+            <ul>
+              <li>serwer lokalny z autoodświeżaniem</li>
+              <li>wsparcie dla scss i sourcemap - ( sourcemapa pomaga nam w wym że widzimy w conoli na stronie dokładnie ten plik 
+                który edytujemy a nie przemielony przez webpacka )
+              </li>
+              <li>minifikacja - jest to swego rodzaju optymalizacja pliku, usuwane są zbędne znaki i gotowy plik leci do przeglądarki</li>
+              <li>babel - pozwala na działanie najnowszych finkcji JavaScript nawet na starszych przeglądarkach</li>
+              <li>publikacja na git hub pages</li>
+            </ul>
+            <p class="week__article">
+              <b class="special-text"> https://github.com/maciejkorsan/wtf-webpack-starter/generate</b>  Pod tym adresem 
+              znajdziemy plik konfiguracyjny.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> https://github.com/maciejkorsan/wtf-webpack-starter/</b>  Pod tym adresem 
+              zpbaczymy jak wyglada repozytorium do pliku konfiguracyjnego i krótka instrukcja.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> npm run (start , build, publish) /</b> Sa to polecenia ustawione w scriptach.
+              Start odpala nam live server pod adresem <b>https://localhost:8080/</b> . Build buduje nam strone i nadpisuje
+              nam katalog dist. Publish wrzuca nam plik dist do osobnej gałezi i tylko ten katalog jest publikowany
+             za pomocą github pages.
+            </p>
+            <p class="week__article">
+              <b class="special-text"> Dodawanie stron, dodawawnie pluginu</b> Jest jedyny przypadek kiedy edytujemy 
+              plik konfiguracyjny, właśnie wtedy gdy chcemy dołączyć nową strone ze stylami. Robuimy to w własnie w pliku
+              <b>webpack.common.js/</b> w ostatniej sekcji gdzie mamy pluginy. kopiujemy cały obiekt <b>new htmlWebPackPlagin</b> 
+              w miejscu template podajemy lokalizacje naszej strony, w miejscu file name podajemy nazwe naszej strony. 
+              W miejscu chunks możemy podpiąc inne style js.
+            </p>
+        </section>
+      </article> 
     </section>
   </main>
   <footer class="footer">
