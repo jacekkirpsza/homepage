@@ -1,5 +1,12 @@
+:root {
+  --darkBackground: linear-gradient(328deg, #020024 0%, #090979 0%, #073b9a 0%, #090f7d 0%, rgba(136, 201, 201, 0.336572) 0%, rgba(160, 205, 215, 0.779149) 15%, rgba(241, 181, 137, 0.695116) 30%, rgba(238, 209, 221, 0.734331) 52%, rgba(155, 233, 204, 0.695116) 74%, rgba(193, 236, 220, 0.849177) 89%);
+  --whitefont: black;
+}
+
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  
+ }
 
 *,
 *:before *:after {
@@ -27,12 +34,18 @@ html {
 .background--js {
   background: pink; }
 
+.background-dark--js {
+  background: darkgrey; }
+
 .body {
   background: #ecfee8;
   background: linear-gradient(328deg, #020024 0%, #090979 0%, #073b9a 0%, #090f7d 0%, rgba(136, 201, 201, 0.336572) 0%, rgba(160, 205, 215, 0.779149) 15%, rgba(241, 181, 137, 0.695116) 30%, rgba(238, 209, 221, 0.734331) 52%, rgba(155, 233, 204, 0.695116) 74%, rgba(193, 236, 220, 0.849177) 89%);
-  margin: 16px auto; }
+  margin: 16px auto; 
+  background: var(--darkBackground);
+  color: var(--whitefont); }
   .body--js {
-    background: #f0e4e6; }
+    background: pink; 
+  }
 
 .body-header {
   display: grid;

@@ -40,6 +40,7 @@
       <h1 class="main-header">Notatki z WTF</h1>
       <div class="learn--js "></div>
       <button class="background--js"> Nie klikaj !!! </button>
+      <button class="background-dark--js"> Dark mode </button>
       <article>
         <h2 class="week">Tydzień 1</h2>
         <section>
@@ -1221,6 +1222,25 @@
               w miejscu template podajemy lokalizacje naszej strony, w miejscu file name podajemy nazwe naszej strony. 
               W miejscu chunks możemy podpiąc inne style js.
             </p>
+        </section>
+        <section>
+          <h3 class="week__title">Zmienne ( Custom Properties ) w CSS</h3>
+          <p class="week__article">
+            <b class="special-text"> :root (pseudoselektor :root )</b> Za pomocą tego pseudoselektora definiujemy zmienne
+            które będziemy mogli później wykorzystac. np <b>:root { --myColor: pink; }</b> Wazne że przed zmienną dodajemy <b>--</b> 
+
+          </p>
+          <p class="week__article">
+            <b class="special-text"> var(--zmienna)</b> Tak pobieramy nasze zmienne. np. <b>section { background: var(--myColor);}</b>
+
+          </p>
+        </section>
+        <section>
+          <h3 class="week__title">Zmiana naszych zmiennych za pmocą JS</h3>
+          <p class="week__article">
+            <b class="special-text"> document.documentElement.style.setProperty('--zmienna', 'wartość')</b> Za pomocą Tego
+             polecenia dostajemy się do naszej zmiennej w CSS i możemy zmienić jej wartość.
+          </p>
         </section>
       </article> 
     </section>

@@ -127,3 +127,25 @@ const action = () => {
 
 click.addEventListener("click", action);
 
+
+const darkmode = document.querySelector(".background-dark--js");
+
+let isDark = false
+
+const mode = () => {
+
+if (isDark) {
+  document.documentElement.style.setProperty('--darkBackground', 'linear-gradient(328deg, #020024 0%, #090979 0%, #073b9a 0%, #090f7d 0%, rgba(136, 201, 201, 0.336572) 0%, rgba(160, 205, 215, 0.779149) 15%, rgba(241, 181, 137, 0.695116) 30%, rgba(238, 209, 221, 0.734331) 52%, rgba(155, 233, 204, 0.695116) 74%, rgba(193, 236, 220, 0.849177) 89%)');
+  document.documentElement.style.setProperty('--whitefont', 'black');
+  isDark = false;
+}
+else {
+  document.documentElement.style.setProperty('--darkBackground', 'grey');
+  document.documentElement.style.setProperty('--whitefont', 'white');
+  isDark = true;
+}
+}
+
+darkmode.addEventListener("click", mode);
+
+
